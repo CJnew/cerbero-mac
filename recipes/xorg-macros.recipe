@@ -1,0 +1,16 @@
+# -*- Mode: Python -*- vi:si:et:sw=4:sts=4:ts=4:syntax=python
+
+
+class Recipe(recipe.Recipe):
+    name = 'xorg-macros'
+    version = '1.19.0'
+    remotes = {'origin': 'git://anongit.freedesktop.org/xorg/util/macros'}
+    commit = 'util-macros-{0}'.format(version)
+    licenses = [License.BSD_like]
+    autoreconf = True
+    autoreconf_sh = './autogen.sh'
+    configure_tpl = './configure %(options)s'
+    deps = []
+
+    def prepare(self):
+        self.configure_options += ' -prefix ' + self.config.build_tools_prefix

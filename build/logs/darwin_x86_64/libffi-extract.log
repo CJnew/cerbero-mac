@@ -1,0 +1,20 @@
+Running command 'git reset --hard 60e4250a77eb3fde500bfd68ec40519fe34b21bd'
+HEAD 现在位于 60e4250 make executable
+Running command 'git branch cerbero_build'
+Running command 'git checkout cerbero_build'
+切换到分支 'cerbero_build'
+Running command 'git reset --hard 60e4250a77eb3fde500bfd68ec40519fe34b21bd'
+HEAD 现在位于 60e4250 make executable
+Running command 'git clone /Users/chenjie/Documents/git/cerbero/build/sources/local/libffi -s -b cerbero_build .'
+正克隆到 '.'...
+完成。
+Running command 'git config user.email'
+467116811@qq.com
+Running command 'git config user.name'
+Jie Chen
+Running command 'git submodule init'
+Running command 'git submodule sync'
+Running command 'git submodule update'
+Running command 'git submodule sync'
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/libffi/0001-libffi-Don-t-be-smart-about-toolexeclibdir.patch'
+应用：libffi: Don't be smart about toolexeclibdir

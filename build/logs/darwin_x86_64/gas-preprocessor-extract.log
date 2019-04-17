@@ -1,0 +1,18 @@
+Running command 'git reset --hard fad9080da871bb7924431a5e22fdaccae56b5950'
+HEAD 现在位于 fad9080 Fix inconsistent indentation
+Running command 'git branch cerbero_build'
+Running command 'git checkout cerbero_build'
+切换到分支 'cerbero_build'
+Running command 'git reset --hard fad9080da871bb7924431a5e22fdaccae56b5950'
+HEAD 现在位于 fad9080 Fix inconsistent indentation
+Running command 'git clone /Users/chenjie/Documents/git/cerbero/build/sources/local/gas-preprocessor -s -b cerbero_build .'
+正克隆到 '.'...
+完成。
+Running command 'git config user.email'
+467116811@qq.com
+Running command 'git config user.name'
+Jie Chen
+Running command 'git submodule init'
+Running command 'git submodule sync'
+Running command 'git submodule update'
+Running command 'git submodule sync'

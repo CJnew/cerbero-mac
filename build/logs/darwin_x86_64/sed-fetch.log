@@ -1,0 +1,4 @@
+Running command 'curl -L  -k http://ftp.gnu.org/gnu/sed/sed-4.2.2.tar.gz -o /Users/chenjie/Documents/git/cerbero/build/sources/local/sed-4.2.2/sed-4.2.2.tar.gz '
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  8 1318k    8  114k    0     0  91178      0  0:00:14  0:00:01  0:00:13 91133 32 1318k   32  432k    0     0   186k      0  0:00:07  0:00:02  0:00:05  186k 63 1318k   63  832k    0     0   247k      0  0:00:05  0:00:03  0:00:02  247k100 1318k  100 1318k    0     0   319k      0  0:00:04  0:00:04 --:--:--  319k

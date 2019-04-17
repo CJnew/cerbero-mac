@@ -1,0 +1,81 @@
+Running command 'make install'
+Making install in lib
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+Making install in src
+ ../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libfl.la libfl_pic.la '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+libtool: install: /usr/bin/install -c .libs/libfl.2.dylib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libfl.2.dylib
+libtool: install: (cd /Users/chenjie/Documents/git/cerbero/build/build-tools/lib && { ln -s -f libfl.2.dylib libfl.dylib || { rm -f libfl.dylib && ln -s libfl.2.dylib libfl.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libfl.lai /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libfl.la
+libtool: install: /usr/bin/install -c .libs/libfl_pic.2.dylib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libfl_pic.2.dylib
+libtool: install: (cd /Users/chenjie/Documents/git/cerbero/build/build-tools/lib && { ln -s -f libfl_pic.2.dylib libfl_pic.dylib || { rm -f libfl_pic.dylib && ln -s libfl_pic.2.dylib libfl_pic.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libfl_pic.lai /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libfl_pic.la
+libtool: install: /usr/bin/install -c .libs/libfl.a /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libfl.a
+libtool: install: chmod 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libfl.a
+libtool: install: ranlib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libfl.a
+libtool: install: /usr/bin/install -c .libs/libfl_pic.a /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libfl_pic.a
+libtool: install: chmod 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libfl_pic.a
+libtool: install: ranlib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libfl_pic.a
+ ../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c flex '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+libtool: install: /usr/bin/install -c flex /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/flex
+ ../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/include'
+ /usr/bin/install -c -m 644 FlexLexer.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include'
+Making install in examples
+Making install in manual
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in fastwc
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in po
+installing ca.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ca/LC_MESSAGES/flex.mo
+installing da.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/da/LC_MESSAGES/flex.mo
+installing de.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/de/LC_MESSAGES/flex.mo
+installing en@quot.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/en@quot/LC_MESSAGES/flex.mo
+installing en@boldquot.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/en@boldquot/LC_MESSAGES/flex.mo
+installing eo.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/eo/LC_MESSAGES/flex.mo
+installing es.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/es/LC_MESSAGES/flex.mo
+installing fi.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/fi/LC_MESSAGES/flex.mo
+installing fr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/fr/LC_MESSAGES/flex.mo
+installing ga.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ga/LC_MESSAGES/flex.mo
+installing hr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/hr/LC_MESSAGES/flex.mo
+installing ko.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ko/LC_MESSAGES/flex.mo
+installing nl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/nl/LC_MESSAGES/flex.mo
+installing pl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pl/LC_MESSAGES/flex.mo
+installing pt_BR.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pt_BR/LC_MESSAGES/flex.mo
+installing ro.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ro/LC_MESSAGES/flex.mo
+installing ru.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ru/LC_MESSAGES/flex.mo
+installing sr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sr/LC_MESSAGES/flex.mo
+installing sv.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sv/LC_MESSAGES/flex.mo
+installing tr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/tr/LC_MESSAGES/flex.mo
+installing vi.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/vi/LC_MESSAGES/flex.mo
+installing zh_CN.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/zh_CN/LC_MESSAGES/flex.mo
+installing zh_TW.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/zh_TW/LC_MESSAGES/flex.mo
+if test "flex" = "gettext-tools"; then \
+	  ../build-aux/install-sh -c -d /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/po; \
+	  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+	    /usr/bin/install -c -m 644 ./$file \
+			    /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/po/$file; \
+	  done; \
+	  for file in Makevars; do \
+	    rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/po/$file; \
+	  done; \
+	else \
+	  : ; \
+	fi
+Making install in tests
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in tools
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-exec-hook
+cd /Users/chenjie/Documents/git/cerbero/build/build-tools/bin && \
+		ln -s -f flex flex++
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/flex'
+ /usr/bin/install -c -m 644 AUTHORS COPYING NEWS ONEWS README.md '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/flex'

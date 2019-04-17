@@ -1,0 +1,30 @@
+Running command 'make install'
+Making install in glib
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-recursive
+Making install in .
+make[4]: Nothing to be done for `install-exec-am'.
+Making install in m4macros
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+make[5]: Nothing to be done for `install-exec-am'.
+Making install in glib
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-recursive
+Making install in libcharset
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+make[7]: Nothing to be done for `install-exec-am'.
+Making install in .
+make[6]: Nothing to be done for `install-exec-am'.
+Making install in .
+ ./install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+  /bin/sh ./libtool   --mode=install /usr/bin/install -c pkg-config '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+libtool: install: /usr/bin/install -c pkg-config /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/pkg-config
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-exec-hook
+make[3]: Nothing to be done for `install-exec-hook'.
+ ./install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/pkg-config'
+ /usr/bin/install -c -m 644 pkg-config-guide.html '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/pkg-config'
+ ./install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/aclocal'
+ /usr/bin/install -c -m 644 pkg.m4 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/aclocal'
+ ./install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+ /usr/bin/install -c -m 644 pkg-config.1 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+Making install in check
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.

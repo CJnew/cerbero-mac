@@ -1,0 +1,746 @@
+Running command 'make install'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-recursive
+Making install in .
+ ./install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+ /usr/bin/install -c glib-gettextize '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+ ./install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/glib-2.0/valgrind'
+ /usr/bin/install -c -m 644 glib.supp '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/glib-2.0/valgrind'
+ ./install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/pkgconfig'
+ /usr/bin/install -c -m 644 glib-2.0.pc gobject-2.0.pc gmodule-2.0.pc gmodule-export-2.0.pc gmodule-no-export-2.0.pc gthread-2.0.pc gio-2.0.pc gio-unix-2.0.pc '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/pkgconfig'
+Making install in m4macros
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+make[4]: Nothing to be done for `install-exec-am'.
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/aclocal'
+ /usr/bin/install -c -m 644 glib-2.0.m4 glib-gettext.m4 gsettings.m4 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/aclocal'
+Making install in glib
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-recursive
+Making install in libcharset
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+/bin/sh /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/glib-tools-2.54.2/install-sh -d /Users/chenjie/Documents/git/cerbero/build/build-tools/lib
+if test -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias; then \
+	  sed -f ref-add.sed /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias > /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	  /usr/bin/install -c -m 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias ; \
+	  rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	else \
+	  if test no = no; then \
+	    sed -f ref-add.sed charset.alias > /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	    /usr/bin/install -c -m 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias ; \
+	    rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	  fi ; \
+	fi
+Making install in pcre
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+make[6]: Nothing to be done for `install-exec-am'.
+Making install in update-pcre
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+make[6]: Nothing to be done for `install-exec-am'.
+Making install in .
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libglib-2.0.la '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+libtool: install: /usr/bin/install -c .libs/libglib-2.0.0.dylib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libglib-2.0.0.dylib
+libtool: install: (cd /Users/chenjie/Documents/git/cerbero/build/build-tools/lib && { ln -s -f libglib-2.0.0.dylib libglib-2.0.dylib || { rm -f libglib-2.0.dylib && ln -s libglib-2.0.0.dylib libglib-2.0.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libglib-2.0.lai /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libglib-2.0.la
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c gtester '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+libtool: install: /usr/bin/install -c .libs/gtester /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/gtester
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+ /usr/bin/install -c gtester-report '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/glib-2.0/include'
+ /usr/bin/install -c -m 644 glibconfig.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/glib-2.0/include'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-exec-hook
+for sf in gtester-report ; do \
+	  mv -f "/Users/chenjie/Documents/git/cerbero/build/build-tools/bin/$sf" "/Users/chenjie/Documents/git/cerbero/build/build-tools/bin/$sf".tmp \
+	  && sed < "/Users/chenjie/Documents/git/cerbero/build/build-tools/bin/$sf".tmp > "/Users/chenjie/Documents/git/cerbero/build/build-tools/bin/$sf" \
+	    -e '1,24s|^ *#@PKGINSTALL_CONFIGVARS_IN24LINES@|  "bindir"    	: "/Users/chenjie/Documents/git/cerbero/build/build-tools/bin", "glib-version"  : "2.54.2"|' \
+	    -e '1,1s|#! /usr/bin/env python.*|#!/usr/local/bin/python|' \
+	  || exit $? ; \
+	  chmod a+x /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/$sf ; \
+	  rm -f "/Users/chenjie/Documents/git/cerbero/build/build-tools/bin/$sf".tmp ; \
+	done
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0/glib/deprecated'
+ /usr/bin/install -c -m 644 deprecated/gallocator.h deprecated/gcache.h deprecated/gcompletion.h deprecated/gmain.h deprecated/grel.h deprecated/gthread.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0/glib/deprecated'
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/glib-2.0/gdb'
+ /usr/bin/install -c -m 644 glib_gdb.py '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/glib-2.0/gdb'
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0'
+ /usr/bin/install -c -m 644 glib-unix.h glib-object.h glib.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0'
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0/glib'
+ /usr/bin/install -c -m 644 glib-autocleanups.h galloca.h garray.h gasyncqueue.h gatomic.h gbacktrace.h gbase64.h gbitlock.h gbookmarkfile.h gbytes.h gcharset.h gchecksum.h gconvert.h gdataset.h gdate.h gdatetime.h gdir.h genviron.h gerror.h gfileutils.h ggettext.h ghash.h ghmac.h ghook.h ghostutils.h gi18n.h gi18n-lib.h giochannel.h gkeyfile.h glist.h gmacros.h gmain.h gmappedfile.h gmarkup.h gmem.h gmessages.h gnode.h goption.h gpattern.h gpoll.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0/glib'
+ /usr/bin/install -c -m 644 gprimes.h gqsort.h gquark.h gqueue.h grand.h gregex.h gscanner.h gsequence.h gshell.h gslice.h gslist.h gspawn.h gstdio.h gstrfuncs.h gtestutils.h gstring.h gstringchunk.h gthread.h gthreadpool.h gtimer.h gtimezone.h gtrashstack.h gtree.h gtypes.h gunicode.h gurifuncs.h gutils.h guuid.h gvarianttype.h gvariant.h gversion.h gversionmacros.h gwin32.h gprintf.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0/glib'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-data-hook
+/Users/chenjie/Documents/git/cerbero/build/build-tools/bin/sed -e "s|\@datadir\@|/Users/chenjie/Documents/git/cerbero/build/build-tools/share|" ./libglib-gdb.py.in > ./libglib-gdb.py
+mkdir -p /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gdb/auto-load/Users/chenjie/Documents/git/cerbero/build/build-tools/lib
+/usr/bin/install -c ./libglib-gdb.py /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gdb/auto-load/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libglib-2.0.so.0.5400.2-gdb.py
+Making install in tests
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+make[6]: Nothing to be done for `install-exec-am'.
+Making install in gmodule
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libgmodule-2.0.la '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+libtool: install: /usr/bin/install -c .libs/libgmodule-2.0.0.dylib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libgmodule-2.0.0.dylib
+libtool: install: (cd /Users/chenjie/Documents/git/cerbero/build/build-tools/lib && { ln -s -f libgmodule-2.0.0.dylib libgmodule-2.0.dylib || { rm -f libgmodule-2.0.dylib && ln -s libgmodule-2.0.0.dylib libgmodule-2.0.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libgmodule-2.0.lai /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libgmodule-2.0.la
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0'
+ /usr/bin/install -c -m 644 gmodule.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-data-hook
+make[5]: Nothing to be done for `install-data-hook'.
+Making install in gthread
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libgthread-2.0.la '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+libtool: install: /usr/bin/install -c .libs/libgthread-2.0.0.dylib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libgthread-2.0.0.dylib
+libtool: install: (cd /Users/chenjie/Documents/git/cerbero/build/build-tools/lib && { ln -s -f libgthread-2.0.0.dylib libgthread-2.0.dylib || { rm -f libgthread-2.0.dylib && ln -s libgthread-2.0.0.dylib libgthread-2.0.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libgthread-2.0.lai /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libgthread-2.0.la
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-data-hook
+make[5]: Nothing to be done for `install-data-hook'.
+Making install in gobject
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-recursive
+Making install in .
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libgobject-2.0.la '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+libtool: install: /usr/bin/install -c .libs/libgobject-2.0.0.dylib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libgobject-2.0.0.dylib
+libtool: install: (cd /Users/chenjie/Documents/git/cerbero/build/build-tools/lib && { ln -s -f libgobject-2.0.0.dylib libgobject-2.0.dylib || { rm -f libgobject-2.0.dylib && ln -s libgobject-2.0.0.dylib libgobject-2.0.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libgobject-2.0.lai /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libgobject-2.0.la
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c gobject-query '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+libtool: install: /usr/bin/install -c .libs/gobject-query /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/gobject-query
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+ /usr/bin/install -c glib-mkenums glib-genmarshal '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/glib-2.0/gdb'
+ /usr/bin/install -c -m 644 gobject_gdb.py '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/glib-2.0/gdb'
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0/gobject'
+ /usr/bin/install -c -m 644 gobject-autocleanups.h glib-types.h gbinding.h gboxed.h gclosure.h genums.h gmarshal.h gobject.h gparam.h gparamspecs.h gsignal.h gsourceclosure.h gtype.h gtypemodule.h gtypeplugin.h gvalue.h gvaluearray.h gvaluecollector.h gvaluetypes.h gobjectnotifyqueue.c '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0/gobject'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-data-hook
+/Users/chenjie/Documents/git/cerbero/build/build-tools/bin/sed -e "s|\@datadir\@|/Users/chenjie/Documents/git/cerbero/build/build-tools/share|" ./libgobject-gdb.py.in > ./libgobject-gdb.py
+mkdir -p /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gdb/auto-load//Users/chenjie/Documents/git/cerbero/build/build-tools/lib
+/usr/bin/install -c ./libgobject-gdb.py /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gdb/auto-load//Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libgobject-2.0.so.0.5400.2-gdb.py
+Making install in tests
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+make[6]: Nothing to be done for `install-exec-am'.
+Making install in gio
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-recursive
+Making install in gdbus-2.0/codegen
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+ ../../.././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+ /usr/bin/install -c gdbus-codegen '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+ ../../.././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/glib-2.0/codegen'
+ /usr/bin/install -c -m 644 __init__.py codegen.py codegen_main.py codegen_docbook.py config.py dbustypes.py parser.py utils.py '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/glib-2.0/codegen'
+Byte-compiling python modules...
+__init__.pycodegen.pycodegen_main.pycodegen_docbook.pyconfig.pydbustypes.pyparser.pyutils.py
+Byte-compiling python modules (optimized versions) ...
+__init__.pycodegen.pycodegen_main.pycodegen_docbook.pyconfig.pydbustypes.pyparser.pyutils.py
+Making install in kqueue
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+make[6]: Nothing to be done for `install-exec-am'.
+Making install in .
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libgio-2.0.la '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+libtool: install: /usr/bin/install -c .libs/libgio-2.0.0.dylib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libgio-2.0.0.dylib
+libtool: install: (cd /Users/chenjie/Documents/git/cerbero/build/build-tools/lib && { ln -s -f libgio-2.0.0.dylib libgio-2.0.dylib || { rm -f libgio-2.0.dylib && ln -s libgio-2.0.0.dylib libgio-2.0.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libgio-2.0.lai /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libgio-2.0.la
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c gio-querymodules glib-compile-schemas glib-compile-resources gsettings gdbus gresource gio '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+libtool: install: /usr/bin/install -c .libs/gio-querymodules /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/gio-querymodules
+libtool: install: /usr/bin/install -c .libs/glib-compile-schemas /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/glib-compile-schemas
+libtool: install: /usr/bin/install -c .libs/glib-compile-resources /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/glib-compile-resources
+libtool: install: /usr/bin/install -c .libs/gsettings /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/gsettings
+libtool: install: /usr/bin/install -c .libs/gdbus /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/gdbus
+libtool: install: /usr/bin/install -c .libs/gresource /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/gresource
+libtool: install: /usr/bin/install -c .libs/gio /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/gio
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/bash-completion/completions'
+ /usr/bin/install -c -m 644 completion/gapplication completion/gdbus completion/gsettings completion/gresource '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/bash-completion/completions'
+/bin/sh /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/glib-tools-2.54.2/install-sh -d /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/gio/modules
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/its'
+ /usr/bin/install -c -m 644 gschema.loc gschema.its '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/its'
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/glib-2.0/schemas'
+ /usr/bin/install -c -m 644 gschema.dtd '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/glib-2.0/schemas'
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0/gio/'
+ /usr/bin/install -c -m 644 gappinfo.h gasyncinitable.h gasyncresult.h gbufferedinputstream.h gbufferedoutputstream.h gbytesicon.h gcancellable.h gcontenttype.h gcharsetconverter.h gconverter.h gconverterinputstream.h gconverteroutputstream.h gdatagrambased.h gdatainputstream.h gdataoutputstream.h gdrive.h gemblem.h gemblemedicon.h gfile.h gfileattribute.h gfileenumerator.h gfileicon.h gfileinfo.h gfileinputstream.h gfilemonitor.h gfilenamecompleter.h gfileoutputstream.h gfileiostream.h gfilterinputstream.h gfilteroutputstream.h gicon.h ginetaddress.h ginetaddressmask.h ginetsocketaddress.h ginputstream.h ginitable.h gio.h gio-autocleanups.h giotypes.h gioenums.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0/gio/'
+ /usr/bin/install -c -m 644 gioerror.h giomodule.h gioscheduler.h giostream.h gloadableicon.h gmount.h gmemoryinputstream.h gmemoryoutputstream.h gmountoperation.h gnativevolumemonitor.h gnetworkaddress.h gnetworkmonitor.h gnetworkservice.h goutputstream.h gpermission.h gpollableinputstream.h gpollableoutputstream.h gpollableutils.h gproxyaddress.h gproxy.h gproxyaddressenumerator.h gproxyresolver.h gresolver.h gresource.h gseekable.h gsimpleasyncresult.h gsimpleiostream.h gsimplepermission.h gsocket.h gsocketaddress.h gsocketaddressenumerator.h gsocketclient.h gsocketconnectable.h gsocketconnection.h gsocketcontrolmessage.h gsocketlistener.h gsocketservice.h gsrvtarget.h gsimpleproxyresolver.h gtask.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0/gio/'
+ /usr/bin/install -c -m 644 gsubprocess.h gsubprocesslauncher.h gtcpconnection.h gtcpwrapperconnection.h gthreadedsocketservice.h gthemedicon.h gtlsbackend.h gtlscertificate.h gtlsclientconnection.h gtlsconnection.h gtlsdatabase.h gtlsfiledatabase.h gtlsinteraction.h gtlspassword.h gtlsserverconnection.h gdtlsconnection.h gdtlsclientconnection.h gdtlsserverconnection.h gvfs.h gvolume.h gvolumemonitor.h gzlibcompressor.h gzlibdecompressor.h glistmodel.h gliststore.h gapplication.h gapplicationcommandline.h gactiongroup.h gactionmap.h gsimpleactiongroup.h gremoteactiongroup.h gactiongroupexporter.h gdbusactiongroup.h gaction.h gpropertyaction.h gsimpleaction.h gmenumodel.h gmenu.h gmenuexporter.h gdbusmenumodel.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0/gio/'
+ /usr/bin/install -c -m 644 gnotification.h gsettingsbackend.h gsettingsschema.h gsettings.h gdbusauthobserver.h gcredentials.h gdbusutils.h gdbuserror.h gdbusaddress.h gdbusconnection.h gdbusmessage.h gdbusnameowning.h gdbusnamewatching.h gdbusproxy.h gdbusintrospection.h gdbusmethodinvocation.h gdbusserver.h gdbusinterface.h gdbusinterfaceskeleton.h gdbusobject.h gdbusobjectskeleton.h gdbusobjectproxy.h gdbusobjectmanager.h gdbusobjectmanagerclient.h gdbusobjectmanagerserver.h gtestdbus.h gioenumtypes.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0/gio/'
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/gio-unix-2.0/gio'
+ /usr/bin/install -c -m 644 gfiledescriptorbased.h gunixconnection.h gunixcredentialsmessage.h gunixmounts.h gunixfdlist.h gunixfdmessage.h gunixinputstream.h gunixoutputstream.h gunixsocketaddress.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/gio-unix-2.0/gio'
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0/gio/'
+ /usr/bin/install -c -m 644 gnetworking.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/glib-2.0/gio/'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-data-hook
+make[6]: Nothing to be done for `install-data-hook'.
+Making install in tests
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-recursive
+Making install in gdbus-object-manager-example
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+make[8]: Nothing to be done for `install-exec-am'.
+Making install in services
+make[7]: Nothing to be done for `install-exec-am'.
+make[7]: Nothing to be done for `install-data-am'.
+Making install in modules
+make[7]: Nothing to be done for `install-exec-am'.
+make[7]: Nothing to be done for `install-exec-am'.
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-data-hook
+make[8]: Nothing to be done for `install-data-hook'.
+Making install in po
+mkdir -p /Users/chenjie/Documents/git/cerbero/build/build-tools/share; \
+	catalogs='af.gmo am.gmo an.gmo ar.gmo as.gmo ast.gmo az.gmo be.gmo be@latin.gmo bg.gmo bn.gmo bn_IN.gmo bs.gmo ca.gmo ca@valencia.gmo cs.gmo cy.gmo da.gmo de.gmo dz.gmo el.gmo en_CA.gmo en_GB.gmo en@shaw.gmo eo.gmo es.gmo et.gmo eu.gmo fa.gmo fi.gmo fr.gmo fur.gmo ga.gmo gd.gmo gl.gmo gu.gmo he.gmo hi.gmo hr.gmo hu.gmo hy.gmo id.gmo is.gmo it.gmo ja.gmo ka.gmo kk.gmo kn.gmo ko.gmo ku.gmo lt.gmo lv.gmo mai.gmo mg.gmo mk.gmo ml.gmo mn.gmo mr.gmo ms.gmo nb.gmo nds.gmo ne.gmo nl.gmo nn.gmo oc.gmo or.gmo pa.gmo pl.gmo ps.gmo pt.gmo pt_BR.gmo ro.gmo ru.gmo rw.gmo si.gmo sk.gmo sl.gmo sq.gmo sr.gmo sr@latin.gmo sr@ije.gmo sv.gmo ta.gmo te.gmo tg.gmo th.gmo tl.gmo tr.gmo ug.gmo tt.gmo uk.gmo vi.gmo wa.gmo xh.gmo yi.gmo zh_CN.gmo zh_HK.gmo zh_TW.gmo'; \
+	for cat in $catalogs; do \
+	  cat=`basename $cat`; \
+	  case "$cat" in \
+	    *.gmo) destdir=/Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale;; \
+	    *)     destdir=/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/locale;; \
+	  esac; \
+	  lang=`echo $cat | sed 's/\.gmo$//'`; \
+	  dir=$destdir/$lang/LC_MESSAGES; \
+	  mkdir -p $dir; \
+	  if test -r $cat; then \
+	    /usr/bin/install -c -m 644 $cat $dir/glib20.mo; \
+	    echo "installing $cat as $dir/glib20.mo"; \
+	  else \
+	    /usr/bin/install -c -m 644 ./$cat $dir/glib20.mo; \
+	    echo "installing ./$cat as" \
+		 "$dir/glib20.mo"; \
+	  fi; \
+	  if test -r $cat.m; then \
+	    /usr/bin/install -c -m 644 $cat.m $dir/glib20.mo.m; \
+	    echo "installing $cat.m as $dir/glib20.mo.m"; \
+	  else \
+	    if test -r ./$cat.m ; then \
+	      /usr/bin/install -c -m 644 ./$cat.m \
+		$dir/glib20.mo.m; \
+	      echo "installing ./$cat as" \
+		   "$dir/glib20.mo.m"; \
+	    else \
+	      true; \
+	    fi; \
+	  fi; \
+	done
+installing af.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/af/LC_MESSAGES/glib20.mo
+installing am.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/am/LC_MESSAGES/glib20.mo
+installing an.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/an/LC_MESSAGES/glib20.mo
+installing ar.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ar/LC_MESSAGES/glib20.mo
+installing as.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/as/LC_MESSAGES/glib20.mo
+installing ast.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ast/LC_MESSAGES/glib20.mo
+installing az.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/az/LC_MESSAGES/glib20.mo
+installing be.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/be/LC_MESSAGES/glib20.mo
+installing be@latin.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/be@latin/LC_MESSAGES/glib20.mo
+installing bg.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/bg/LC_MESSAGES/glib20.mo
+installing bn.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/bn/LC_MESSAGES/glib20.mo
+installing bn_IN.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/bn_IN/LC_MESSAGES/glib20.mo
+installing bs.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/bs/LC_MESSAGES/glib20.mo
+installing ca.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ca/LC_MESSAGES/glib20.mo
+installing ca@valencia.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ca@valencia/LC_MESSAGES/glib20.mo
+installing cs.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/cs/LC_MESSAGES/glib20.mo
+installing cy.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/cy/LC_MESSAGES/glib20.mo
+installing da.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/da/LC_MESSAGES/glib20.mo
+installing de.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/de/LC_MESSAGES/glib20.mo
+installing dz.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/dz/LC_MESSAGES/glib20.mo
+installing el.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/el/LC_MESSAGES/glib20.mo
+installing en_CA.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/en_CA/LC_MESSAGES/glib20.mo
+installing en_GB.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/en_GB/LC_MESSAGES/glib20.mo
+installing en@shaw.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/en@shaw/LC_MESSAGES/glib20.mo
+installing eo.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/eo/LC_MESSAGES/glib20.mo
+installing es.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/es/LC_MESSAGES/glib20.mo
+installing et.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/et/LC_MESSAGES/glib20.mo
+installing eu.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/eu/LC_MESSAGES/glib20.mo
+installing fa.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/fa/LC_MESSAGES/glib20.mo
+installing fi.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/fi/LC_MESSAGES/glib20.mo
+installing fr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/fr/LC_MESSAGES/glib20.mo
+installing fur.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/fur/LC_MESSAGES/glib20.mo
+installing ga.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ga/LC_MESSAGES/glib20.mo
+installing gd.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/gd/LC_MESSAGES/glib20.mo
+installing gl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/gl/LC_MESSAGES/glib20.mo
+installing gu.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/gu/LC_MESSAGES/glib20.mo
+installing he.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/he/LC_MESSAGES/glib20.mo
+installing hi.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/hi/LC_MESSAGES/glib20.mo
+installing hr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/hr/LC_MESSAGES/glib20.mo
+installing hu.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/hu/LC_MESSAGES/glib20.mo
+installing hy.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/hy/LC_MESSAGES/glib20.mo
+installing id.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/id/LC_MESSAGES/glib20.mo
+installing is.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/is/LC_MESSAGES/glib20.mo
+installing it.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/it/LC_MESSAGES/glib20.mo
+installing ja.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ja/LC_MESSAGES/glib20.mo
+installing ka.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ka/LC_MESSAGES/glib20.mo
+installing kk.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/kk/LC_MESSAGES/glib20.mo
+installing kn.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/kn/LC_MESSAGES/glib20.mo
+installing ko.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ko/LC_MESSAGES/glib20.mo
+installing ku.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ku/LC_MESSAGES/glib20.mo
+installing lt.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/lt/LC_MESSAGES/glib20.mo
+installing lv.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/lv/LC_MESSAGES/glib20.mo
+installing mai.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/mai/LC_MESSAGES/glib20.mo
+installing mg.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/mg/LC_MESSAGES/glib20.mo
+installing mk.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/mk/LC_MESSAGES/glib20.mo
+installing ml.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ml/LC_MESSAGES/glib20.mo
+installing mn.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/mn/LC_MESSAGES/glib20.mo
+installing mr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/mr/LC_MESSAGES/glib20.mo
+installing ms.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ms/LC_MESSAGES/glib20.mo
+installing nb.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/nb/LC_MESSAGES/glib20.mo
+installing nds.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/nds/LC_MESSAGES/glib20.mo
+installing ne.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ne/LC_MESSAGES/glib20.mo
+installing nl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/nl/LC_MESSAGES/glib20.mo
+installing nn.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/nn/LC_MESSAGES/glib20.mo
+installing oc.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/oc/LC_MESSAGES/glib20.mo
+installing or.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/or/LC_MESSAGES/glib20.mo
+installing pa.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pa/LC_MESSAGES/glib20.mo
+installing pl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pl/LC_MESSAGES/glib20.mo
+installing ps.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ps/LC_MESSAGES/glib20.mo
+installing pt.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pt/LC_MESSAGES/glib20.mo
+installing pt_BR.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pt_BR/LC_MESSAGES/glib20.mo
+installing ro.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ro/LC_MESSAGES/glib20.mo
+installing ru.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ru/LC_MESSAGES/glib20.mo
+installing rw.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/rw/LC_MESSAGES/glib20.mo
+installing si.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/si/LC_MESSAGES/glib20.mo
+installing sk.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sk/LC_MESSAGES/glib20.mo
+installing sl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sl/LC_MESSAGES/glib20.mo
+installing sq.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sq/LC_MESSAGES/glib20.mo
+installing sr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sr/LC_MESSAGES/glib20.mo
+installing sr@latin.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sr@latin/LC_MESSAGES/glib20.mo
+installing sr@ije.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sr@ije/LC_MESSAGES/glib20.mo
+installing sv.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sv/LC_MESSAGES/glib20.mo
+installing ta.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ta/LC_MESSAGES/glib20.mo
+installing te.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/te/LC_MESSAGES/glib20.mo
+installing tg.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/tg/LC_MESSAGES/glib20.mo
+installing th.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/th/LC_MESSAGES/glib20.mo
+installing tl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/tl/LC_MESSAGES/glib20.mo
+installing tr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/tr/LC_MESSAGES/glib20.mo
+installing ug.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ug/LC_MESSAGES/glib20.mo
+installing tt.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/tt/LC_MESSAGES/glib20.mo
+installing uk.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/uk/LC_MESSAGES/glib20.mo
+installing vi.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/vi/LC_MESSAGES/glib20.mo
+installing wa.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/wa/LC_MESSAGES/glib20.mo
+installing xh.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/xh/LC_MESSAGES/glib20.mo
+installing yi.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/yi/LC_MESSAGES/glib20.mo
+installing zh_CN.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/zh_CN/LC_MESSAGES/glib20.mo
+installing zh_HK.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/zh_HK/LC_MESSAGES/glib20.mo
+installing zh_TW.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/zh_TW/LC_MESSAGES/glib20.mo
+if test "glib" = "glib"; then \
+	  mkdir -p /Users/chenjie/Documents/git/cerbero/build/build-tools/share/glib-2.0/gettext/po; \
+	  /usr/bin/install -c -m 644 ./Makefile.in.in \
+			  /Users/chenjie/Documents/git/cerbero/build/build-tools/share/glib-2.0/gettext/po/Makefile.in.in; \
+	else \
+	  : ; \
+	fi
+Making install in docs
+Making install in reference
+Making install in glib
+make[5]: Nothing to be done for `install-exec-am'.
+ /usr/bin/install -c -m 644 ./html/Sorted_binary_tree_breadth-first_traversal.svg
+ /usr/bin/install -c -m 644 ./html/Sorted_binary_tree_inorder.svg
+ /usr/bin/install -c -m 644 ./html/Sorted_binary_tree_postorder.svg
+ /usr/bin/install -c -m 644 ./html/Sorted_binary_tree_preorder.svg
+ /usr/bin/install -c -m 644 ./html/annotation-glossary.html
+ /usr/bin/install -c -m 644 ./html/api-index-full.html
+ /usr/bin/install -c -m 644 ./html/deprecated.html
+ /usr/bin/install -c -m 644 ./html/file-name-encodings.png
+ /usr/bin/install -c -m 644 ./html/glib-Arrays.html
+ /usr/bin/install -c -m 644 ./html/glib-Asynchronous-Queues.html
+ /usr/bin/install -c -m 644 ./html/glib-Atomic-Operations.html
+ /usr/bin/install -c -m 644 ./html/glib-Automatic-String-Completion.html
+ /usr/bin/install -c -m 644 ./html/glib-Balanced-Binary-Trees.html
+ /usr/bin/install -c -m 644 ./html/glib-Base64-Encoding.html
+ /usr/bin/install -c -m 644 ./html/glib-Basic-Types.html
+ /usr/bin/install -c -m 644 ./html/glib-Bookmark-file-parser.html
+ /usr/bin/install -c -m 644 ./html/glib-Bounds-checked-integer-arithmetic.html
+ /usr/bin/install -c -m 644 ./html/glib-Byte-Arrays.html
+ /usr/bin/install -c -m 644 ./html/glib-Byte-Order-Macros.html
+ /usr/bin/install -c -m 644 ./html/glib-Caches.html
+ /usr/bin/install -c -m 644 ./html/glib-Character-Set-Conversion.html
+ /usr/bin/install -c -m 644 ./html/glib-Commandline-option-parser.html
+ /usr/bin/install -c -m 644 ./html/glib-Data-Checksums.html
+ /usr/bin/install -c -m 644 ./html/glib-Data-HMACs.html
+ /usr/bin/install -c -m 644 ./html/glib-Datasets.html
+ /usr/bin/install -c -m 644 ./html/glib-Date-and-Time-Functions.html
+ /usr/bin/install -c -m 644 ./html/glib-Deprecated-Thread-APIs.html
+ /usr/bin/install -c -m 644 ./html/glib-Double-ended-Queues.html
+ /usr/bin/install -c -m 644 ./html/glib-Doubly-Linked-Lists.html
+ /usr/bin/install -c -m 644 ./html/glib-Dynamic-Loading-of-Modules.html
+ /usr/bin/install -c -m 644 ./html/glib-Error-Reporting.html
+ /usr/bin/install -c -m 644 ./html/glib-File-Utilities.html
+ /usr/bin/install -c -m 644 ./html/glib-GDateTime.html
+ /usr/bin/install -c -m 644 ./html/glib-GTimeZone.html
+ /usr/bin/install -c -m 644 ./html/glib-GUuid.html
+ /usr/bin/install -c -m 644 ./html/glib-GVariant.html
+ /usr/bin/install -c -m 644 ./html/glib-GVariantType.html
+ /usr/bin/install -c -m 644 ./html/glib-Glob-style-pattern-matching.html
+ /usr/bin/install -c -m 644 ./html/glib-Hash-Tables.html
+ /usr/bin/install -c -m 644 ./html/glib-Hook-Functions.html
+ /usr/bin/install -c -m 644 ./html/glib-Hostname-Utilities.html
+ /usr/bin/install -c -m 644 ./html/glib-I18N.html
+ /usr/bin/install -c -m 644 ./html/glib-IO-Channels.html
+ /usr/bin/install -c -m 644 ./html/glib-Key-value-file-parser.html
+ /usr/bin/install -c -m 644 ./html/glib-Keyed-Data-Lists.html
+ /usr/bin/install -c -m 644 ./html/glib-Lexical-Scanner.html
+ /usr/bin/install -c -m 644 ./html/glib-Memory-Allocation.html
+ /usr/bin/install -c -m 644 ./html/glib-Memory-Slices.html
+ /usr/bin/install -c -m 644 ./html/glib-Message-Logging.html
+ /usr/bin/install -c -m 644 ./html/glib-Miscellaneous-Macros.html
+ /usr/bin/install -c -m 644 ./html/glib-Miscellaneous-Utility-Functions.html
+ /usr/bin/install -c -m 644 ./html/glib-N-ary-Trees.html
+ /usr/bin/install -c -m 644 ./html/glib-Numerical-Definitions.html
+ /usr/bin/install -c -m 644 ./html/glib-Perl-compatible-regular-expressions.html
+ /usr/bin/install -c -m 644 ./html/glib-Pointer-Arrays.html
+ /usr/bin/install -c -m 644 ./html/glib-Quarks.html
+ /usr/bin/install -c -m 644 ./html/glib-Random-Numbers.html
+ /usr/bin/install -c -m 644 ./html/glib-Relations-and-Tuples.html
+ /usr/bin/install -c -m 644 ./html/glib-Sequences.html
+ /usr/bin/install -c -m 644 ./html/glib-Shell-related-Utilities.html
+ /usr/bin/install -c -m 644 ./html/glib-Simple-XML-Subset-Parser.html
+ /usr/bin/install -c -m 644 ./html/glib-Singly-Linked-Lists.html
+ /usr/bin/install -c -m 644 ./html/glib-Spawning-Processes.html
+ /usr/bin/install -c -m 644 ./html/glib-Standard-Macros.html
+ /usr/bin/install -c -m 644 ./html/glib-String-Chunks.html
+ /usr/bin/install -c -m 644 ./html/glib-String-Utility-Functions.html
+ /usr/bin/install -c -m 644 ./html/glib-Strings.html
+ /usr/bin/install -c -m 644 ./html/glib-Testing.html
+ /usr/bin/install -c -m 644 ./html/glib-The-Main-Event-Loop.html
+ /usr/bin/install -c -m 644 ./html/glib-Thread-Pools.html
+ /usr/bin/install -c -m 644 ./html/glib-Threads.html
+ /usr/bin/install -c -m 644 ./html/glib-Timers.html
+ /usr/bin/install -c -m 644 ./html/glib-Trash-Stacks.html
+ /usr/bin/install -c -m 644 ./html/glib-Type-Conversion-Macros.html
+ /usr/bin/install -c -m 644 ./html/glib-UNIX-specific-utilities-and-integration.html
+ /usr/bin/install -c -m 644 ./html/glib-URI-Functions.html
+ /usr/bin/install -c -m 644 ./html/glib-Unicode-Manipulation.html
+ /usr/bin/install -c -m 644 ./html/glib-Version-Information.html
+ /usr/bin/install -c -m 644 ./html/glib-Warnings-and-Assertions.html
+ /usr/bin/install -c -m 644 ./html/glib-Windows-Compatibility-Functions.html
+ /usr/bin/install -c -m 644 ./html/glib-building.html
+ /usr/bin/install -c -m 644 ./html/glib-changes.html
+ /usr/bin/install -c -m 644 ./html/glib-compiling.html
+ /usr/bin/install -c -m 644 ./html/glib-core.html
+ /usr/bin/install -c -m 644 ./html/glib-cross-compiling.html
+ /usr/bin/install -c -m 644 ./html/glib-data-types.html
+ /usr/bin/install -c -m 644 ./html/glib-fundamentals.html
+ /usr/bin/install -c -m 644 ./html/glib-gettextize.html
+ /usr/bin/install -c -m 644 ./html/glib-programming.html
+ /usr/bin/install -c -m 644 ./html/glib-regex-syntax.html
+ /usr/bin/install -c -m 644 ./html/glib-resources.html
+ /usr/bin/install -c -m 644 ./html/glib-running.html
+ /usr/bin/install -c -m 644 ./html/glib-utilities.html
+ /usr/bin/install -c -m 644 ./html/glib.devhelp2
+ /usr/bin/install -c -m 644 ./html/glib.html
+ /usr/bin/install -c -m 644 ./html/gtester-report.html
+ /usr/bin/install -c -m 644 ./html/gtester.html
+ /usr/bin/install -c -m 644 ./html/gvariant-format-strings.html
+ /usr/bin/install -c -m 644 ./html/gvariant-text.html
+ /usr/bin/install -c -m 644 ./html/home.png
+ /usr/bin/install -c -m 644 ./html/index.html
+ /usr/bin/install -c -m 644 ./html/left-insensitive.png
+ /usr/bin/install -c -m 644 ./html/left.png
+ /usr/bin/install -c -m 644 ./html/mainloop-states.gif
+ /usr/bin/install -c -m 644 ./html/right-insensitive.png
+ /usr/bin/install -c -m 644 ./html/right.png
+ /usr/bin/install -c -m 644 ./html/style.css
+ /usr/bin/install -c -m 644 ./html/tools.html
+ /usr/bin/install -c -m 644 ./html/up-insensitive.png
+ /usr/bin/install -c -m 644 ./html/up.png
+Making install in gobject
+make[5]: Nothing to be done for `install-exec-am'.
+ /usr/bin/install -c -m 644 ./html/GBinding.html
+ /usr/bin/install -c -m 644 ./html/GTypeModule.html
+ /usr/bin/install -c -m 644 ./html/GTypePlugin.html
+ /usr/bin/install -c -m 644 ./html/annotation-glossary.html
+ /usr/bin/install -c -m 644 ./html/api-index-full.html
+ /usr/bin/install -c -m 644 ./html/ch01s02.html
+ /usr/bin/install -c -m 644 ./html/chapter-gobject.html
+ /usr/bin/install -c -m 644 ./html/chapter-gtype.html
+ /usr/bin/install -c -m 644 ./html/chapter-intro.html
+ /usr/bin/install -c -m 644 ./html/chapter-signal.html
+ /usr/bin/install -c -m 644 ./html/glib-genmarshal.html
+ /usr/bin/install -c -m 644 ./html/glib-mkenums.html
+ /usr/bin/install -c -m 644 ./html/glue.png
+ /usr/bin/install -c -m 644 ./html/gobject-Boxed-Types.html
+ /usr/bin/install -c -m 644 ./html/gobject-Closures.html
+ /usr/bin/install -c -m 644 ./html/gobject-Enumeration-and-Flag-Types.html
+ /usr/bin/install -c -m 644 ./html/gobject-GParamSpec.html
+ /usr/bin/install -c -m 644 ./html/gobject-Generic-values.html
+ /usr/bin/install -c -m 644 ./html/gobject-Signals.html
+ /usr/bin/install -c -m 644 ./html/gobject-Standard-Parameter-and-Value-Types.html
+ /usr/bin/install -c -m 644 ./html/gobject-The-Base-Object-Type.html
+ /usr/bin/install -c -m 644 ./html/gobject-Type-Information.html
+ /usr/bin/install -c -m 644 ./html/gobject-Value-arrays.html
+ /usr/bin/install -c -m 644 ./html/gobject-Varargs-Value-Collection.html
+ /usr/bin/install -c -m 644 ./html/gobject-memory.html
+ /usr/bin/install -c -m 644 ./html/gobject-properties.html
+ /usr/bin/install -c -m 644 ./html/gobject-query.html
+ /usr/bin/install -c -m 644 ./html/gobject.devhelp2
+ /usr/bin/install -c -m 644 ./html/gtype-conventions.html
+ /usr/bin/install -c -m 644 ./html/gtype-instantiable-classed.html
+ /usr/bin/install -c -m 644 ./html/gtype-non-instantiable-classed.html
+ /usr/bin/install -c -m 644 ./html/gtype-non-instantiable.html
+ /usr/bin/install -c -m 644 ./html/home.png
+ /usr/bin/install -c -m 644 ./html/howto-gobject-chainup.html
+ /usr/bin/install -c -m 644 ./html/howto-gobject-code.html
+ /usr/bin/install -c -m 644 ./html/howto-gobject-construction.html
+ /usr/bin/install -c -m 644 ./html/howto-gobject-destruction.html
+ /usr/bin/install -c -m 644 ./html/howto-gobject-methods.html
+ /usr/bin/install -c -m 644 ./html/howto-gobject.html
+ /usr/bin/install -c -m 644 ./html/howto-interface-implement.html
+ /usr/bin/install -c -m 644 ./html/howto-interface-override.html
+ /usr/bin/install -c -m 644 ./html/howto-interface-prerequisite.html
+ /usr/bin/install -c -m 644 ./html/howto-interface-properties.html
+ /usr/bin/install -c -m 644 ./html/howto-interface.html
+ /usr/bin/install -c -m 644 ./html/howto-signals.html
+ /usr/bin/install -c -m 644 ./html/index.html
+ /usr/bin/install -c -m 644 ./html/left-insensitive.png
+ /usr/bin/install -c -m 644 ./html/left.png
+ /usr/bin/install -c -m 644 ./html/pr01.html
+ /usr/bin/install -c -m 644 ./html/pt01.html
+ /usr/bin/install -c -m 644 ./html/pt02.html
+ /usr/bin/install -c -m 644 ./html/pt03.html
+ /usr/bin/install -c -m 644 ./html/right-insensitive.png
+ /usr/bin/install -c -m 644 ./html/right.png
+ /usr/bin/install -c -m 644 ./html/rn01.html
+ /usr/bin/install -c -m 644 ./html/rn02.html
+ /usr/bin/install -c -m 644 ./html/signal.html
+ /usr/bin/install -c -m 644 ./html/style.css
+ /usr/bin/install -c -m 644 ./html/tools-ginspector.html
+ /usr/bin/install -c -m 644 ./html/tools-gob.html
+ /usr/bin/install -c -m 644 ./html/tools-gtkdoc.html
+ /usr/bin/install -c -m 644 ./html/tools-refdb.html
+ /usr/bin/install -c -m 644 ./html/tools-vala.html
+ /usr/bin/install -c -m 644 ./html/up-insensitive.png
+ /usr/bin/install -c -m 644 ./html/up.png
+Making install in gio
+make[5]: Nothing to be done for `install-exec-am'.
+ /usr/bin/install -c -m 644 ./html/GAction.html
+ /usr/bin/install -c -m 644 ./html/GActionGroup.html
+ /usr/bin/install -c -m 644 ./html/GActionMap.html
+ /usr/bin/install -c -m 644 ./html/GAppInfo.html
+ /usr/bin/install -c -m 644 ./html/GAppInfoMonitor.html
+ /usr/bin/install -c -m 644 ./html/GApplication.html
+ /usr/bin/install -c -m 644 ./html/GApplicationCommandLine.html
+ /usr/bin/install -c -m 644 ./html/GAsyncInitable.html
+ /usr/bin/install -c -m 644 ./html/GAsyncResult.html
+ /usr/bin/install -c -m 644 ./html/GBufferedInputStream.html
+ /usr/bin/install -c -m 644 ./html/GBufferedOutputStream.html
+ /usr/bin/install -c -m 644 ./html/GBytesIcon.html
+ /usr/bin/install -c -m 644 ./html/GCancellable.html
+ /usr/bin/install -c -m 644 ./html/GCharsetConverter.html
+ /usr/bin/install -c -m 644 ./html/GConverter.html
+ /usr/bin/install -c -m 644 ./html/GCredentials.html
+ /usr/bin/install -c -m 644 ./html/GDBusActionGroup.html
+ /usr/bin/install -c -m 644 ./html/GDBusAuthObserver.html
+ /usr/bin/install -c -m 644 ./html/GDBusConnection.html
+ /usr/bin/install -c -m 644 ./html/GDBusInterface.html
+ /usr/bin/install -c -m 644 ./html/GDBusInterfaceSkeleton.html
+ /usr/bin/install -c -m 644 ./html/GDBusMenuModel.html
+ /usr/bin/install -c -m 644 ./html/GDBusMessage.html
+ /usr/bin/install -c -m 644 ./html/GDBusMethodInvocation.html
+ /usr/bin/install -c -m 644 ./html/GDBusObject.html
+ /usr/bin/install -c -m 644 ./html/GDBusObjectManager.html
+ /usr/bin/install -c -m 644 ./html/GDBusObjectManagerClient.html
+ /usr/bin/install -c -m 644 ./html/GDBusObjectManagerServer.html
+ /usr/bin/install -c -m 644 ./html/GDBusObjectProxy.html
+ /usr/bin/install -c -m 644 ./html/GDBusObjectSkeleton.html
+ /usr/bin/install -c -m 644 ./html/GDBusProxy.html
+ /usr/bin/install -c -m 644 ./html/GDBusServer.html
+ /usr/bin/install -c -m 644 ./html/GDataInputStream.html
+ /usr/bin/install -c -m 644 ./html/GDataOutputStream.html
+ /usr/bin/install -c -m 644 ./html/GDatagramBased.html
+ /usr/bin/install -c -m 644 ./html/GDrive.html
+ /usr/bin/install -c -m 644 ./html/GDtlsClientConnection.html
+ /usr/bin/install -c -m 644 ./html/GDtlsConnection.html
+ /usr/bin/install -c -m 644 ./html/GDtlsServerConnection.html
+ /usr/bin/install -c -m 644 ./html/GEmblem.html
+ /usr/bin/install -c -m 644 ./html/GEmblemedIcon.html
+ /usr/bin/install -c -m 644 ./html/GFile.html
+ /usr/bin/install -c -m 644 ./html/GFileDescriptorBased.html
+ /usr/bin/install -c -m 644 ./html/GFileEnumerator.html
+ /usr/bin/install -c -m 644 ./html/GFileIOStream.html
+ /usr/bin/install -c -m 644 ./html/GFileIcon.html
+ /usr/bin/install -c -m 644 ./html/GFileInfo.html
+ /usr/bin/install -c -m 644 ./html/GFileInputStream.html
+ /usr/bin/install -c -m 644 ./html/GFileMonitor.html
+ /usr/bin/install -c -m 644 ./html/GFileOutputStream.html
+ /usr/bin/install -c -m 644 ./html/GFilenameCompleter.html
+ /usr/bin/install -c -m 644 ./html/GFilterInputStream.html
+ /usr/bin/install -c -m 644 ./html/GFilterOutputStream.html
+ /usr/bin/install -c -m 644 ./html/GIOModule.html
+ /usr/bin/install -c -m 644 ./html/GIOStream.html
+ /usr/bin/install -c -m 644 ./html/GIcon.html
+ /usr/bin/install -c -m 644 ./html/GInetAddress.html
+ /usr/bin/install -c -m 644 ./html/GInetAddressMask.html
+ /usr/bin/install -c -m 644 ./html/GInetSocketAddress.html
+ /usr/bin/install -c -m 644 ./html/GInitable.html
+ /usr/bin/install -c -m 644 ./html/GInputStream.html
+ /usr/bin/install -c -m 644 ./html/GListModel.html
+ /usr/bin/install -c -m 644 ./html/GListStore.html
+ /usr/bin/install -c -m 644 ./html/GLoadableIcon.html
+ /usr/bin/install -c -m 644 ./html/GMemoryInputStream.html
+ /usr/bin/install -c -m 644 ./html/GMemoryOutputStream.html
+ /usr/bin/install -c -m 644 ./html/GMenu.html
+ /usr/bin/install -c -m 644 ./html/GMenuModel.html
+ /usr/bin/install -c -m 644 ./html/GMount.html
+ /usr/bin/install -c -m 644 ./html/GMountOperation.html
+ /usr/bin/install -c -m 644 ./html/GNetworkAddress.html
+ /usr/bin/install -c -m 644 ./html/GNetworkMonitor.html
+ /usr/bin/install -c -m 644 ./html/GNetworkService.html
+ /usr/bin/install -c -m 644 ./html/GNotification.html
+ /usr/bin/install -c -m 644 ./html/GOutputStream.html
+ /usr/bin/install -c -m 644 ./html/GPermission.html
+ /usr/bin/install -c -m 644 ./html/GPollableInputStream.html
+ /usr/bin/install -c -m 644 ./html/GPollableOutputStream.html
+ /usr/bin/install -c -m 644 ./html/GPropertyAction.html
+ /usr/bin/install -c -m 644 ./html/GProxy.html
+ /usr/bin/install -c -m 644 ./html/GProxyAddress.html
+ /usr/bin/install -c -m 644 ./html/GProxyResolver.html
+ /usr/bin/install -c -m 644 ./html/GRemoteActionGroup.html
+ /usr/bin/install -c -m 644 ./html/GResolver.html
+ /usr/bin/install -c -m 644 ./html/GResource.html
+ /usr/bin/install -c -m 644 ./html/GSeekable.html
+ /usr/bin/install -c -m 644 ./html/GSettings.html
+ /usr/bin/install -c -m 644 ./html/GSettingsBackend.html
+ /usr/bin/install -c -m 644 ./html/GSimpleAction.html
+ /usr/bin/install -c -m 644 ./html/GSimpleActionGroup.html
+ /usr/bin/install -c -m 644 ./html/GSimpleAsyncResult.html
+ /usr/bin/install -c -m 644 ./html/GSimpleIOStream.html
+ /usr/bin/install -c -m 644 ./html/GSimplePermission.html
+ /usr/bin/install -c -m 644 ./html/GSimpleProxyResolver.html
+ /usr/bin/install -c -m 644 ./html/GSocket.html
+ /usr/bin/install -c -m 644 ./html/GSocketAddress.html
+ /usr/bin/install -c -m 644 ./html/GSocketClient.html
+ /usr/bin/install -c -m 644 ./html/GSocketConnectable.html
+ /usr/bin/install -c -m 644 ./html/GSocketConnection.html
+ /usr/bin/install -c -m 644 ./html/GSocketControlMessage.html
+ /usr/bin/install -c -m 644 ./html/GSocketListener.html
+ /usr/bin/install -c -m 644 ./html/GSocketService.html
+ /usr/bin/install -c -m 644 ./html/GSrvTarget.html
+ /usr/bin/install -c -m 644 ./html/GSubprocess.html
+ /usr/bin/install -c -m 644 ./html/GSubprocessLauncher.html
+ /usr/bin/install -c -m 644 ./html/GTask.html
+ /usr/bin/install -c -m 644 ./html/GTcpConnection.html
+ /usr/bin/install -c -m 644 ./html/GTcpWrapperConnection.html
+ /usr/bin/install -c -m 644 ./html/GTestDBus.html
+ /usr/bin/install -c -m 644 ./html/GThemedIcon.html
+ /usr/bin/install -c -m 644 ./html/GThreadedSocketService.html
+ /usr/bin/install -c -m 644 ./html/GTlsBackend.html
+ /usr/bin/install -c -m 644 ./html/GTlsCertificate.html
+ /usr/bin/install -c -m 644 ./html/GTlsClientConnection.html
+ /usr/bin/install -c -m 644 ./html/GTlsConnection.html
+ /usr/bin/install -c -m 644 ./html/GTlsDatabase.html
+ /usr/bin/install -c -m 644 ./html/GTlsFileDatabase.html
+ /usr/bin/install -c -m 644 ./html/GTlsInteraction.html
+ /usr/bin/install -c -m 644 ./html/GTlsPassword.html
+ /usr/bin/install -c -m 644 ./html/GTlsServerConnection.html
+ /usr/bin/install -c -m 644 ./html/GUnixConnection.html
+ /usr/bin/install -c -m 644 ./html/GUnixCredentialsMessage.html
+ /usr/bin/install -c -m 644 ./html/GUnixFDList.html
+ /usr/bin/install -c -m 644 ./html/GUnixFDMessage.html
+ /usr/bin/install -c -m 644 ./html/GUnixInputStream.html
+ /usr/bin/install -c -m 644 ./html/GUnixOutputStream.html
+ /usr/bin/install -c -m 644 ./html/GUnixSocketAddress.html
+ /usr/bin/install -c -m 644 ./html/GVfs.html
+ /usr/bin/install -c -m 644 ./html/GVolume.html
+ /usr/bin/install -c -m 644 ./html/GVolumeMonitor.html
+ /usr/bin/install -c -m 644 ./html/GZlibCompressor.html
+ /usr/bin/install -c -m 644 ./html/GZlibDecompressor.html
+ /usr/bin/install -c -m 644 ./html/annotation-glossary.html
+ /usr/bin/install -c -m 644 ./html/api-index-full.html
+ /usr/bin/install -c -m 644 ./html/application.html
+ /usr/bin/install -c -m 644 ./html/async.html
+ /usr/bin/install -c -m 644 ./html/ch01.html
+ /usr/bin/install -c -m 644 ./html/ch02.html
+ /usr/bin/install -c -m 644 ./html/ch03.html
+ /usr/bin/install -c -m 644 ./html/ch32.html
+ /usr/bin/install -c -m 644 ./html/ch33.html
+ /usr/bin/install -c -m 644 ./html/ch33s02.html
+ /usr/bin/install -c -m 644 ./html/ch33s03.html
+ /usr/bin/install -c -m 644 ./html/ch34.html
+ /usr/bin/install -c -m 644 ./html/ch34s02.html
+ /usr/bin/install -c -m 644 ./html/ch34s03.html
+ /usr/bin/install -c -m 644 ./html/ch34s04.html
+ /usr/bin/install -c -m 644 ./html/ch34s05.html
+ /usr/bin/install -c -m 644 ./html/ch34s06.html
+ /usr/bin/install -c -m 644 ./html/ch34s07.html
+ /usr/bin/install -c -m 644 ./html/ch35.html
+ /usr/bin/install -c -m 644 ./html/ch35s02.html
+ /usr/bin/install -c -m 644 ./html/ch35s03.html
+ /usr/bin/install -c -m 644 ./html/ch35s04.html
+ /usr/bin/install -c -m 644 ./html/conversion.html
+ /usr/bin/install -c -m 644 ./html/data-models.html
+ /usr/bin/install -c -m 644 ./html/extending-gio.html
+ /usr/bin/install -c -m 644 ./html/extending.html
+ /usr/bin/install -c -m 644 ./html/failable_initialization.html
+ /usr/bin/install -c -m 644 ./html/file_mon.html
+ /usr/bin/install -c -m 644 ./html/file_ops.html
+ /usr/bin/install -c -m 644 ./html/gapplication-tool.html
+ /usr/bin/install -c -m 644 ./html/gdbus-codegen.html
+ /usr/bin/install -c -m 644 ./html/gdbus-convenience.html
+ /usr/bin/install -c -m 644 ./html/gdbus-example-gdbus-codegen.html
+ /usr/bin/install -c -m 644 ./html/gdbus-lowlevel.html
+ /usr/bin/install -c -m 644 ./html/gdbus.html
+ /usr/bin/install -c -m 644 ./html/gio-D-Bus-Addresses.html
+ /usr/bin/install -c -m 644 ./html/gio-D-Bus-Introspection-Data.html
+ /usr/bin/install -c -m 644 ./html/gio-D-Bus-Utilities.html
+ /usr/bin/install -c -m 644 ./html/gio-Desktop-file-based-GAppInfo.html
+ /usr/bin/install -c -m 644 ./html/gio-Extension-Points.html
+ /usr/bin/install -c -m 644 ./html/gio-GActionGroup-exporter.html
+ /usr/bin/install -c -m 644 ./html/gio-GContentType.html
+ /usr/bin/install -c -m 644 ./html/gio-GConverterInputstream.html
+ /usr/bin/install -c -m 644 ./html/gio-GConverterOutputstream.html
+ /usr/bin/install -c -m 644 ./html/gio-GDBusError.html
+ /usr/bin/install -c -m 644 ./html/gio-GFileAttribute.html
+ /usr/bin/install -c -m 644 ./html/gio-GIOError.html
+ /usr/bin/install -c -m 644 ./html/gio-GIOScheduler.html
+ /usr/bin/install -c -m 644 ./html/gio-GMenuModel-exporter.html
+ /usr/bin/install -c -m 644 ./html/gio-GSettingsSchema-GSettingsSchemaSource.html
+ /usr/bin/install -c -m 644 ./html/gio-GWin32InputStream.html
+ /usr/bin/install -c -m 644 ./html/gio-GWin32OutputStream.html
+ /usr/bin/install -c -m 644 ./html/gio-GWin32RegistryKey.html
+ /usr/bin/install -c -m 644 ./html/gio-Owning-Bus-Names.html
+ /usr/bin/install -c -m 644 ./html/gio-TLS-Overview.html
+ /usr/bin/install -c -m 644 ./html/gio-Unix-Mounts.html
+ /usr/bin/install -c -m 644 ./html/gio-Watching-Bus-Names.html
+ /usr/bin/install -c -m 644 ./html/gio-gnetworking.h.html
+ /usr/bin/install -c -m 644 ./html/gio-gpollableutils.html
+ /usr/bin/install -c -m 644 ./html/gio-hierarchy.html
+ /usr/bin/install -c -m 644 ./html/gio-querymodules.html
+ /usr/bin/install -c -m 644 ./html/gio.devhelp2
+ /usr/bin/install -c -m 644 ./html/gio.html
+ /usr/bin/install -c -m 644 ./html/glib-compile-resources.html
+ /usr/bin/install -c -m 644 ./html/glib-compile-schemas.html
+ /usr/bin/install -c -m 644 ./html/gresource-tool.html
+ /usr/bin/install -c -m 644 ./html/gsettings-tool.html
+ /usr/bin/install -c -m 644 ./html/gvfs-overview.png
+ /usr/bin/install -c -m 644 ./html/highlevel-socket.html
+ /usr/bin/install -c -m 644 ./html/home.png
+ /usr/bin/install -c -m 644 ./html/icons.html
+ /usr/bin/install -c -m 644 ./html/index.html
+ /usr/bin/install -c -m 644 ./html/left-insensitive.png
+ /usr/bin/install -c -m 644 ./html/left.png
+ /usr/bin/install -c -m 644 ./html/menu-example.png
+ /usr/bin/install -c -m 644 ./html/menu-model.png
+ /usr/bin/install -c -m 644 ./html/migrating.html
+ /usr/bin/install -c -m 644 ./html/networking.html
+ /usr/bin/install -c -m 644 ./html/permissions.html
+ /usr/bin/install -c -m 644 ./html/pt01.html
+ /usr/bin/install -c -m 644 ./html/pt02.html
+ /usr/bin/install -c -m 644 ./html/registry.html
+ /usr/bin/install -c -m 644 ./html/resolver.html
+ /usr/bin/install -c -m 644 ./html/resources.html
+ /usr/bin/install -c -m 644 ./html/right-insensitive.png
+ /usr/bin/install -c -m 644 ./html/right.png
+ /usr/bin/install -c -m 644 ./html/running-gio-apps.html
+ /usr/bin/install -c -m 644 ./html/settings.html
+ /usr/bin/install -c -m 644 ./html/streaming.html
+ /usr/bin/install -c -m 644 ./html/style.css
+ /usr/bin/install -c -m 644 ./html/subprocesses.html
+ /usr/bin/install -c -m 644 ./html/testing.html
+ /usr/bin/install -c -m 644 ./html/tls.html
+ /usr/bin/install -c -m 644 ./html/tools.html
+ /usr/bin/install -c -m 644 ./html/types.html
+ /usr/bin/install -c -m 644 ./html/up-insensitive.png
+ /usr/bin/install -c -m 644 ./html/up.png
+ /usr/bin/install -c -m 644 ./html/utils.html
+ /usr/bin/install -c -m 644 ./html/volume_mon.html
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in tests
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-recursive
+Making install in gobject
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+make[6]: Nothing to be done for `install-exec-am'.
+Making install in refcount
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+make[6]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-exec-am'.

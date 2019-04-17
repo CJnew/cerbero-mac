@@ -1,0 +1,14 @@
+prefix=/Users/chenjie/Documents/git/cerbero/build/build-tools
+exec_prefix=${prefix}
+libdir=/Users/chenjie/Documents/git/cerbero/build/build-tools/lib
+includedir=${prefix}/include
+
+gmodule_supported=true
+
+Name: GModule
+Description: Dynamic module loader for GLib
+Requires: glib-2.0
+Version: 2.54.2
+Libs: -L${libdir} -lgmodule-2.0 
+Libs.private: 
+Cflags: -D_REENTRANT

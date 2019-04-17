@@ -1,0 +1,48 @@
+Running command 'mkdir -p /Users/chenjie/Documents/git/cerbero/build/sources/local/orc-tool'
+Running command 'git init'
+已初始化空的 Git 仓库于 /Users/chenjie/Documents/git/cerbero/build/sources/local/orc-tool/.git/
+Running command 'git config user.email'
+467116811@qq.com
+Running command 'git config user.name'
+Jie Chen
+Running command 'git remote add origin git://anongit.freedesktop.org/gstreamer/orc'
+Running command 'git fetch --all'
+正在获取 origin
+来自 git://anongit.freedesktop.org/gstreamer/orc
+ * [新分支]          0.5        -> origin/0.5
+ * [新分支]          master     -> origin/master
+ * [新标签]          0.4.23     -> 0.4.23
+ * [新标签]          merge-base -> merge-base
+ * [新标签]          orc-0.4.0  -> orc-0.4.0
+ * [新标签]          orc-0.4.10 -> orc-0.4.10
+ * [新标签]          orc-0.4.11 -> orc-0.4.11
+ * [新标签]          orc-0.4.12 -> orc-0.4.12
+ * [新标签]          orc-0.4.13 -> orc-0.4.13
+ * [新标签]          orc-0.4.14 -> orc-0.4.14
+ * [新标签]          orc-0.4.15 -> orc-0.4.15
+ * [新标签]          orc-0.4.16 -> orc-0.4.16
+ * [新标签]          orc-0.4.17 -> orc-0.4.17
+ * [新标签]          orc-0.4.18 -> orc-0.4.18
+ * [新标签]          orc-0.4.19 -> orc-0.4.19
+ * [新标签]          orc-0.4.2  -> orc-0.4.2
+ * [新标签]          orc-0.4.20 -> orc-0.4.20
+ * [新标签]          orc-0.4.21 -> orc-0.4.21
+ * [新标签]          orc-0.4.22 -> orc-0.4.22
+ * [新标签]          orc-0.4.23 -> orc-0.4.23
+ * [新标签]          orc-0.4.24 -> orc-0.4.24
+ * [新标签]          orc-0.4.25 -> orc-0.4.25
+ * [新标签]          orc-0.4.26 -> orc-0.4.26
+ * [新标签]          orc-0.4.27 -> orc-0.4.27
+ * [新标签]          orc-0.4.28 -> orc-0.4.28
+ * [新标签]          orc-0.4.3  -> orc-0.4.3
+ * [新标签]          orc-0.4.4  -> orc-0.4.4
+ * [新标签]          orc-0.4.5  -> orc-0.4.5
+ * [新标签]          orc-0.4.6  -> orc-0.4.6
+ * [新标签]          orc-0.4.7  -> orc-0.4.7
+ * [新标签]          orc-0.4.8  -> orc-0.4.8
+ * [新标签]          orc-0.4.9  -> orc-0.4.9
+Running command 'git reset --hard origin/master'
+HEAD 现在位于 c69e91e orc: fix C++ style comment
+Running command 'git submodule init'
+Running command 'git submodule sync'
+Running command 'git submodule update'

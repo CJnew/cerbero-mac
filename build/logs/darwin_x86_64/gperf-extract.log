@@ -1,0 +1,11 @@
+Running command 'mkdir -p /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/gperf-3.0.4'
+Running command 'git init'
+已初始化空的 Git 仓库于 /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/gperf-3.0.4/.git/
+Running command 'git config user.email'
+467116811@qq.com
+Running command 'git config user.name'
+Jie Chen
+Running command 'git add --force -A .'
+Running command 'git commit -m "Initial commit" > /dev/null 2>&1'
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/build-tools/gperf-0001-Don-t-override-environment-AR.patch'
+应用：Don't override environment AR

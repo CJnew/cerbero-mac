@@ -1,0 +1,15 @@
+Running command 'make install'
+cd lib; /Applications/Xcode.app/Contents/Developer/usr/bin/make install
+make[1]: Nothing to be done for `install'.
+cd src; /Applications/Xcode.app/Contents/Developer/usr/bin/make install
+/bin/sh ./../mkinstalldirs /Users/chenjie/Documents/git/cerbero/build/build-tools/bin
+/usr/bin/install -c gperf /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/gperf
+cd tests; /Applications/Xcode.app/Contents/Developer/usr/bin/make install
+make[1]: Nothing to be done for `install'.
+cd doc; /Applications/Xcode.app/Contents/Developer/usr/bin/make install
+/bin/sh ./../mkinstalldirs /Users/chenjie/Documents/git/cerbero/build/build-tools/share/info
+/usr/bin/install -c -m 644 ./gperf.info /Users/chenjie/Documents/git/cerbero/build/build-tools/share/info/gperf.info
+/bin/sh ./../mkinstalldirs /Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1
+/usr/bin/install -c -m 644 ./gperf.1 /Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1/gperf.1
+/bin/sh ./../mkinstalldirs /Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/
+/usr/bin/install -c -m 644 ./gperf.html /Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc//gperf.html

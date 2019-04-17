@@ -1,0 +1,47 @@
+Running command 'make install'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-recursive
+Making install in orc
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   liborc-0.4.la '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+libtool: install: /usr/bin/install -c .libs/liborc-0.4.0.dylib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/liborc-0.4.0.dylib
+libtool: install: (cd /Users/chenjie/Documents/git/cerbero/build/build-tools/lib && { ln -s -f liborc-0.4.0.dylib liborc-0.4.dylib || { rm -f liborc-0.4.dylib && ln -s liborc-0.4.0.dylib liborc-0.4.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/liborc-0.4.lai /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/liborc-0.4.la
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/orc-0.4/orc'
+ /usr/bin/install -c -m 644 orc-stdint.h orc.h orcarm.h orcbytecode.h orcbytecodes.h orccode.h orccompiler.h orcconstant.h orccpu.h orccpuinsn.h orcdebug.h orcemulateopcodes.h orcexecutor.h orcfunctions.h orcinstruction.h orcinternal.h orclimits.h orcmmx.h orcneon.h orconce.h orcopcode.h orcparse.h orcpowerpc.h orcprogram.h orcrule.h orcsse.h orctarget.h orcutils.h orcvariable.h orcx86.h orcx86insn.h orcmips.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/orc-0.4/orc'
+Making install in orc-test
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   liborc-test-0.4.la '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+libtool: install: /usr/bin/install -c .libs/liborc-test-0.4.0.dylib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/liborc-test-0.4.0.dylib
+libtool: install: (cd /Users/chenjie/Documents/git/cerbero/build/build-tools/lib && { ln -s -f liborc-test-0.4.0.dylib liborc-test-0.4.dylib || { rm -f liborc-test-0.4.dylib && ln -s liborc-test-0.4.0.dylib liborc-test-0.4.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/liborc-test-0.4.lai /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/liborc-test-0.4.la
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/orc-0.4/orc-test'
+ /usr/bin/install -c -m 644 orctest.h orcarray.h orcrandom.h orcprofile.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/orc-0.4/orc-test'
+Making install in tools
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+  /bin/sh ../libtool   --mode=install /usr/bin/install -c orcc orc-bugreport '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+libtool: install: /usr/bin/install -c .libs/orcc /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/orcc
+libtool: install: /usr/bin/install -c .libs/orc-bugreport /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/orc-bugreport
+make[3]: Nothing to be done for `install-data-am'.
+Making install in testsuite
+Making install in orcc
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.
+Making install in benchmorc
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in examples
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+make[4]: Nothing to be done for `install-exec-am'.
+make[4]: Nothing to be done for `install-data-am'.
+Making install in doc
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+make[4]: Nothing to be done for `install-exec-am'.
+Nothing to install
+make[3]: Nothing to be done for `install-exec-am'.
+ ./install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/aclocal'
+ /usr/bin/install -c -m 644 orc.m4 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/aclocal'
+ ./install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/pkgconfig'
+ /usr/bin/install -c -m 644 orc-0.4.pc orc-test-0.4.pc '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/pkgconfig'

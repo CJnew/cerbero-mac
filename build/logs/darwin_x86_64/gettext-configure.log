@@ -1,0 +1,740 @@
+Running command './configure --prefix /Users/chenjie/Documents/git/cerbero/build/build-tools --libdir /Users/chenjie/Documents/git/cerbero/build/build-tools/lib --disable-maintainer-mode  --disable-silent-rules  --enable-introspection  --build=x86_64-apple-darwin12   '
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... ../build-aux/install-sh -c -d
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... clang
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether clang accepts -g... yes
+checking for clang option to accept ISO C89... none needed
+checking whether clang understands -c and -o together... rm: conftest.dSYM: is a directory
+yes
+checking for style of include used by make... GNU
+checking dependency style of clang... gcc3
+checking for bison... bison -y
+checking whether to use Java... yes
+checking how to run the C preprocessor... clang -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+rm: conftest.dSYM: is a directory
+checking for Java compiler... no
+checking for jar... jar
+checking for preferred C# implementation... any
+checking for C# compiler... no
+checking build system type... x86_64-apple-darwin12
+checking host system type... x86_64-apple-darwin12
+checking for ANSI C header files... rm: conftest.dSYM: is a directory
+rm: conftest.dSYM: is a directory
+yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking whether _XOPEN_SOURCE should be defined... no
+checking for Minix Amsterdam compiler... no
+checking the archiver (ar) interface... ar
+checking for ar... ar
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by clang... ld
+checking if the linker (ld) is GNU ld... no
+checking for BSD- or MS-compatible name lister (nm)... nm
+checking the name lister (nm) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 196608
+checking how to convert x86_64-apple-darwin12 file names to x86_64-apple-darwin12 format... func_convert_file_noop
+checking how to convert x86_64-apple-darwin12 file names to toolchain format... func_convert_file_noop
+checking for ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... no
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse nm output from clang object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dsymutil... dsymutil
+checking for nmedit... nmedit
+checking for lipo... lipo
+checking for otool... otool
+checking for otool64... no
+checking for -single_module linker flag... yes
+checking for -exported_symbols_list linker flag... yes
+checking for -force_load linker flag... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if clang supports -fno-rtti -fno-exceptions... yes
+checking for clang option to produce PIC... -fno-common -DPIC
+checking if clang PIC flag -fno-common -DPIC works... yes
+checking if clang static flag -static works... no
+checking if clang supports -c -o file.o... yes
+checking if clang supports -c -o file.o... (cached) yes
+checking whether the clang linker (ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin12 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for windres... no
+checking whether NLS is requested... yes
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking whether we are using the GNU C Library 2 or newer... no
+checking whether the -Werror option is usable... yes
+checking for simple visibility declarations... yes
+checking for inline... inline
+checking for size_t... yes
+checking for stdint.h... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... yes
+checking for string.h... (cached) yes
+checking for getopt.h... yes
+checking for sys/time.h... yes
+checking for sys/socket.h... yes
+checking for iconv.h... yes
+checking for wctype.h... yes
+checking for langinfo.h... yes
+checking for xlocale.h... yes
+checking for sys/mman.h... yes
+checking for wchar.h... yes
+checking for stdint.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for features.h... no
+checking for getpagesize... yes
+checking for working mmap... yes
+checking whether integer division by zero raises SIGFPE... guessing yes
+checking for inttypes.h... yes
+checking for unsigned long long int... yes
+checking for inttypes.h... (cached) yes
+checking whether the inttypes.h PRIxNN macros are broken... no
+checking for ld used by clang... ld
+checking if the linker (ld) is GNU ld... no
+checking for shared library run path origin... done
+checking whether imported symbols can be declared weak... no
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_kill in -lpthread... yes
+checking for multithread API to use... posix
+checking for pthread_rwlock_t... yes
+checking for iconv... yes
+checking for working iconv... yes
+checking how to link with libiconv... -liconv
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking argz.h usability... no
+checking argz.h presence... no
+checking for argz.h... no
+checking for inttypes.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for getcwd... yes
+checking for getegid... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getuid... yes
+checking for mempcpy... no
+checking for munmap... yes
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strtoul... yes
+checking for tsearch... yes
+checking for uselocale... yes
+checking for argz_count... no
+checking for argz_stringify... no
+checking for argz_next... no
+checking for __fsetlocking... no
+checking for getlocalename_l... no
+checking whether feof_unlocked is declared... yes
+checking whether fgets_unlocked is declared... no
+checking for bison... bison
+checking version of bison... 2.3, bad
+checking for long long int... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking for intmax_t... yes
+checking whether printf() supports POSIX/XSI format strings... yes
+checking whether we are using the GNU C Library >= 2.1 or uClibc... no
+checking for stdint.h... (cached) yes
+checking for SIZE_MAX... yes
+checking for stdint.h... (cached) yes
+checking for symlink... yes
+checking for canonicalize_file_name... no
+checking for getcwd... (cached) yes
+checking for readlink... yes
+checking for realpath... yes
+checking for readlinkat... yes
+checking for gettimeofday... yes
+checking for iswcntrl... yes
+checking for iswblank... yes
+checking for lstat... yes
+checking for mbsinit... yes
+checking for mbrtowc... yes
+checking for mbslen... no
+checking for mprotect... yes
+checking for _set_invalid_parameter_handler... no
+checking for setenv... yes
+checking for wcwidth... yes
+checking for working fcntl.h... no (bad O_NOATIME)
+checking for CFPreferencesCopyAppValue... yes
+checking for CFLocaleCopyCurrent... yes
+checking for ptrdiff_t... yes
+checking for features.h... (cached) no
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for asprintf... yes
+checking for fwprintf... yes
+checking for newlocale... yes
+checking for putenv... yes
+checking for setenv... (cached) yes
+checking for setlocale... yes
+checking for snprintf... yes
+checking for strnlen... yes
+checking for wcslen... yes
+checking for wcsnlen... yes
+checking for mbrtowc... (cached) yes
+checking for wcrtomb... yes
+checking whether _snprintf is declared... no
+checking whether _snwprintf is declared... no
+checking whether getc_unlocked is declared... yes
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking for CFPreferencesCopyAppValue... (cached) yes
+checking for CFLocaleCopyCurrent... (cached) yes
+checking whether included gettext is requested... no
+checking for GNU gettext in libc... no
+checking for GNU gettext in libintl... no
+checking whether to use NLS... yes
+checking where the gettext function comes from... included intl directory
+checking whether to use C++... yes
+checking whether // is distinct from /... no
+checking whether realpath works... no
+checking if environ is properly declared... no
+checking whether the preprocessor supports include_next... yes
+checking whether system header files limit the line length... no
+checking for complete errno.h... yes
+checking whether strerror_r is declared... yes
+checking for strerror_r... yes
+checking whether strerror_r returns char *... no
+checking for getopt.h... (cached) yes
+checking for getopt_long_only... yes
+checking whether getopt is POSIX compatible... no
+checking whether getenv is declared... yes
+checking for C/C++ restrict keyword... __restrict
+checking for struct timeval... yes
+checking for wide-enough struct timeval.tv_sec member... yes
+checking whether gettimeofday is declared without a macro... yes
+checking whether iswcntrl works... yes
+checking for towlower... yes
+checking for wctype_t... yes
+checking for wctrans_t... yes
+checking whether wctype is declared without a macro... yes
+checking whether iswctype is declared without a macro... yes
+checking whether wctrans is declared without a macro... yes
+checking whether towctrans is declared without a macro... yes
+checking whether getc_unlocked is declared... (cached) yes
+checking for max_align_t... yes
+checking whether NULL can be used in arbitrary expressions... yes
+checking whether lstat correctly handles trailing slash... no
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for mbstate_t... yes
+checking for a traditional japanese locale... ja_JP.eucJP
+checking for a transitional chinese locale... zh_CN.GB18030
+checking for a french Unicode locale... fr_FR.UTF-8
+checking for mmap... yes
+checking for MAP_ANONYMOUS... yes
+checking whether memchr works... yes
+checking for sigset_t... yes
+checking for SIGPIPE... yes
+checking for shared library path variable... DYLD_LIBRARY_PATH
+checking whether to activate relocatable installation... no
+checking whether setenv is declared... yes
+checking for pid_t... yes
+checking for uid_t in sys/types.h... yes
+checking whether C symbols are prefixed with underscore at the linker level... no
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking whether stdint.h conforms to C99... yes
+checking whether stdint.h predates C++11... no
+checking whether strerror(0) succeeds... no
+checking whether ffsl is declared without a macro... yes
+checking whether ffsll is declared without a macro... yes
+checking whether memmem is declared without a macro... yes
+checking whether mempcpy is declared without a macro... no
+checking whether memrchr is declared without a macro... no
+checking whether rawmemchr is declared without a macro... no
+checking whether stpcpy is declared without a macro... yes
+checking whether stpncpy is declared without a macro... yes
+checking whether strchrnul is declared without a macro... no
+checking whether strdup is declared without a macro... yes
+checking whether strncat is declared without a macro... yes
+checking whether strndup is declared without a macro... yes
+checking whether strnlen is declared without a macro... yes
+checking whether strpbrk is declared without a macro... yes
+checking whether strsep is declared without a macro... yes
+checking whether strcasestr is declared without a macro... yes
+checking whether strtok_r is declared without a macro... yes
+checking whether strerror_r is declared without a macro... yes
+checking whether strsignal is declared without a macro... yes
+checking whether strverscmp is declared without a macro... no
+checking whether strnlen is declared... (cached) yes
+checking whether stat file-mode macros are broken... no
+checking for mode_t... yes
+checking for struct timespec in <time.h>... yes
+checking whether clearerr_unlocked is declared... yes
+checking whether feof_unlocked is declared... (cached) yes
+checking whether ferror_unlocked is declared... yes
+checking whether fflush_unlocked is declared... no
+checking whether fgets_unlocked is declared... (cached) no
+checking whether fputc_unlocked is declared... no
+checking whether fputs_unlocked is declared... no
+checking whether fread_unlocked is declared... no
+checking whether fwrite_unlocked is declared... no
+checking whether getchar_unlocked is declared... yes
+checking whether putc_unlocked is declared... yes
+checking whether putchar_unlocked is declared... yes
+checking whether <wchar.h> uses 'inline' correctly... yes
+checking whether the C++ compiler (clang++  -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -L/Users/chenjie/Documents/git/cerbero/build/build-tools/lib   -headerpad_max_install_names -Wl,-headerpad_max_install_names -Wno-error=unused-command-line-argument  -arch x86_64 -m64 -Wl,-arch,x86_64  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk ) works... yes
+checking whether the C++ compiler supports namespaces... yes
+checking dependency style of clang++... gcc3
+checking for atexit... yes
+checking whether // is distinct from /... (cached) no
+checking for error_at_line... no
+checking whether gettimeofday clobbers localtime buffer... no
+checking for gettimeofday with POSIX signature... yes
+checking whether the compiler generally respects inline... yes
+checking whether iswblank is declared... yes
+checking whether to use Java... yes
+checking whether langinfo.h defines CODESET... yes
+checking whether langinfo.h defines T_FMT_AMPM... yes
+checking whether langinfo.h defines ERA... yes
+checking whether langinfo.h defines YESEXPR... yes
+checking whether nl_langinfo is declared without a macro... yes
+checking whether locale.h conforms to POSIX:2001... yes
+checking whether locale.h defines locale_t... no
+checking whether struct lconv is properly defined... yes
+checking whether setlocale is declared without a macro... yes
+checking whether duplocale is declared without a macro... yes
+checking for setlocale... (cached) yes
+checking for uselocale... (cached) yes
+checking for getlocalename_l... (cached) no
+checking for pthread_rwlock_t... (cached) yes
+checking whether mbrtowc handles incomplete characters... yes
+checking whether mbrtowc works as well as mbtowc... yes
+checking whether mbrtowc handles a NULL pwc argument... yes
+checking whether mbrtowc handles a NULL string argument... yes
+checking whether mbrtowc has a correct return value... yes
+checking whether mbrtowc returns 0 when parsing a NUL character... yes
+checking whether mbrtowc works on empty input... yes
+checking whether the C locale is free of encoding errors... yes
+checking whether mbrtowc handles incomplete characters... (cached) yes
+checking whether mbrtowc works as well as mbtowc... (cached) yes
+checking for memmove... yes
+checking whether program_invocation_name is declared... no
+checking whether program_invocation_short_name is declared... no
+checking for raise... yes
+checking for sigprocmask... yes
+checking whether readlink signature is correct... yes
+checking whether readlink handles trailing slash correctly... no
+checking search.h usability... yes
+checking search.h presence... yes
+checking for search.h... yes
+checking for tsearch... (cached) yes
+checking for volatile sig_atomic_t... yes
+checking for sighandler_t... no
+checking whether pthread_sigmask is declared without a macro... yes
+checking whether sigaction is declared without a macro... yes
+checking whether sigaddset is declared without a macro... yes
+checking whether sigdelset is declared without a macro... yes
+checking whether sigemptyset is declared without a macro... yes
+checking whether sigfillset is declared without a macro... yes
+checking whether sigismember is declared without a macro... yes
+checking whether sigpending is declared without a macro... yes
+checking whether sigprocmask is declared without a macro... yes
+checking for sigprocmask... (cached) yes
+checking for ssize_t... yes
+checking whether stat handles trailing slashes on directories... yes
+checking whether stat handles trailing slashes on files... no
+checking for max_align_t... (cached) yes
+checking whether NULL can be used in arbitrary expressions... (cached) yes
+checking which flavor of printf attribute matches inttypes macros... system
+checking whether dprintf is declared without a macro... yes
+checking whether fpurge is declared without a macro... yes
+checking whether fseeko is declared without a macro... yes
+checking whether ftello is declared without a macro... yes
+checking whether getdelim is declared without a macro... yes
+checking whether getline is declared without a macro... yes
+checking whether gets is declared without a macro... yes
+checking whether pclose is declared without a macro... yes
+checking whether popen is declared without a macro... yes
+checking whether renameat is declared without a macro... yes
+checking whether snprintf is declared without a macro... yes
+checking whether tmpfile is declared without a macro... yes
+checking whether vdprintf is declared without a macro... yes
+checking whether vsnprintf is declared without a macro... yes
+checking whether _Exit is declared without a macro... yes
+checking whether atoll is declared without a macro... yes
+checking whether canonicalize_file_name is declared without a macro... no
+checking whether getloadavg is declared without a macro... yes
+checking whether getsubopt is declared without a macro... yes
+checking whether grantpt is declared without a macro... yes
+checking whether initstate is declared without a macro... yes
+checking whether initstate_r is declared without a macro... no
+checking whether mkdtemp is declared without a macro... no
+checking whether mkostemp is declared without a macro... no
+checking whether mkostemps is declared without a macro... no
+checking whether mkstemp is declared without a macro... yes
+checking whether mkstemps is declared without a macro... no
+checking whether posix_openpt is declared without a macro... yes
+checking whether ptsname is declared without a macro... yes
+checking whether ptsname_r is declared without a macro... yes
+checking whether random is declared without a macro... yes
+checking whether random_r is declared without a macro... no
+checking whether realpath is declared without a macro... yes
+checking whether rpmatch is declared without a macro... no
+checking whether secure_getenv is declared without a macro... no
+checking whether setenv is declared without a macro... yes
+checking whether setstate is declared without a macro... yes
+checking whether setstate_r is declared without a macro... no
+checking whether srandom is declared without a macro... yes
+checking whether srandom_r is declared without a macro... no
+checking whether strtod is declared without a macro... yes
+checking whether strtoll is declared without a macro... yes
+checking whether strtoull is declared without a macro... yes
+checking whether unlockpt is declared without a macro... yes
+checking whether unsetenv is declared without a macro... yes
+checking for working strnlen... yes
+checking for strtoul... (cached) yes
+checking for nlink_t... yes
+checking whether fchmodat is declared without a macro... yes
+checking whether fstat is declared without a macro... yes
+checking whether fstatat is declared without a macro... yes
+checking whether futimens is declared without a macro... yes
+checking whether lchmod is declared without a macro... yes
+checking whether lstat is declared without a macro... yes
+checking whether mkdirat is declared without a macro... yes
+checking whether mkfifo is declared without a macro... yes
+checking whether mkfifoat is declared without a macro... no
+checking whether mknod is declared without a macro... yes
+checking whether mknodat is declared without a macro... no
+checking whether stat is declared without a macro... yes
+checking whether utimensat is declared without a macro... yes
+checking whether chdir is declared without a macro... yes
+checking whether chown is declared without a macro... yes
+checking whether dup is declared without a macro... yes
+checking whether dup2 is declared without a macro... yes
+checking whether dup3 is declared without a macro... no
+checking whether environ is declared without a macro... no
+checking whether euidaccess is declared without a macro... no
+checking whether faccessat is declared without a macro... yes
+checking whether fchdir is declared without a macro... yes
+checking whether fchownat is declared without a macro... yes
+checking whether fdatasync is declared without a macro... no
+checking whether fsync is declared without a macro... yes
+checking whether ftruncate is declared without a macro... yes
+checking whether getcwd is declared without a macro... yes
+checking whether getdomainname is declared without a macro... yes
+checking whether getdtablesize is declared without a macro... yes
+checking whether getgroups is declared without a macro... yes
+checking whether gethostname is declared without a macro... yes
+checking whether getlogin is declared without a macro... yes
+checking whether getlogin_r is declared without a macro... yes
+checking whether getpagesize is declared without a macro... yes
+checking whether getusershell is declared without a macro... yes
+checking whether setusershell is declared without a macro... yes
+checking whether endusershell is declared without a macro... yes
+checking whether group_member is declared without a macro... no
+checking whether isatty is declared without a macro... yes
+checking whether lchown is declared without a macro... yes
+checking whether link is declared without a macro... yes
+checking whether linkat is declared without a macro... yes
+checking whether lseek is declared without a macro... yes
+checking whether pipe is declared without a macro... yes
+checking whether pipe2 is declared without a macro... no
+checking whether pread is declared without a macro... yes
+checking whether pwrite is declared without a macro... yes
+checking whether readlink is declared without a macro... yes
+checking whether readlinkat is declared without a macro... yes
+checking whether rmdir is declared without a macro... yes
+checking whether sethostname is declared without a macro... yes
+checking whether sleep is declared without a macro... yes
+checking whether symlink is declared without a macro... yes
+checking whether symlinkat is declared without a macro... yes
+checking whether ttyname_r is declared without a macro... yes
+checking whether unlink is declared without a macro... yes
+checking whether unlinkat is declared without a macro... yes
+checking whether usleep is declared without a macro... yes
+checking whether btowc is declared without a macro... yes
+checking whether wctob is declared without a macro... yes
+checking whether mbsinit is declared without a macro... yes
+checking whether mbrtowc is declared without a macro... yes
+checking whether mbrlen is declared without a macro... yes
+checking whether mbsrtowcs is declared without a macro... yes
+checking whether mbsnrtowcs is declared without a macro... yes
+checking whether wcrtomb is declared without a macro... yes
+checking whether wcsrtombs is declared without a macro... yes
+checking whether wcsnrtombs is declared without a macro... yes
+checking whether wcwidth is declared without a macro... yes
+checking whether wmemchr is declared without a macro... yes
+checking whether wmemcmp is declared without a macro... yes
+checking whether wmemcpy is declared without a macro... yes
+checking whether wmemmove is declared without a macro... yes
+checking whether wmemset is declared without a macro... yes
+checking whether wcslen is declared without a macro... yes
+checking whether wcsnlen is declared without a macro... yes
+checking whether wcscpy is declared without a macro... yes
+checking whether wcpcpy is declared without a macro... yes
+checking whether wcsncpy is declared without a macro... yes
+checking whether wcpncpy is declared without a macro... yes
+checking whether wcscat is declared without a macro... yes
+checking whether wcsncat is declared without a macro... yes
+checking whether wcscmp is declared without a macro... yes
+checking whether wcsncmp is declared without a macro... yes
+checking whether wcscasecmp is declared without a macro... yes
+checking whether wcsncasecmp is declared without a macro... yes
+checking whether wcscoll is declared without a macro... yes
+checking whether wcsxfrm is declared without a macro... yes
+checking whether wcsdup is declared without a macro... yes
+checking whether wcschr is declared without a macro... yes
+checking whether wcsrchr is declared without a macro... yes
+checking whether wcscspn is declared without a macro... yes
+checking whether wcsspn is declared without a macro... yes
+checking whether wcspbrk is declared without a macro... yes
+checking whether wcsstr is declared without a macro... yes
+checking whether wcstok is declared without a macro... yes
+checking whether wcswidth is declared without a macro... yes
+checking whether iswcntrl works... (cached) yes
+checking for towlower... (cached) yes
+checking for wctype_t... (cached) yes
+checking for wctrans_t... (cached) yes
+checking whether wctype is declared without a macro... (cached) yes
+checking whether iswctype is declared without a macro... (cached) yes
+checking whether wctrans is declared without a macro... (cached) yes
+checking whether towctrans is declared without a macro... (cached) yes
+checking whether wcwidth is declared... (cached) yes
+checking whether wcwidth works reasonably in UTF-8 locales... no
+checking for size_t... (cached) yes
+checking for setlocale... (cached) yes
+checking for perl... /usr/bin/perl
+checking whether the C++ compiler (clang++  -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -L/Users/chenjie/Documents/git/cerbero/build/build-tools/lib   -headerpad_max_install_names -Wl,-headerpad_max_install_names -Wno-error=unused-command-line-argument  -arch x86_64 -m64 -Wl,-arch,x86_64  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk ) works... yes
+checking whether the C++ compiler supports namespaces... yes
+checking dependency style of clang++... (cached) gcc3
+checking for sched_yield in -lrt... no
+checking for sched_yield in -lposix4... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating csharpcomp.sh
+config.status: creating javacomp.sh
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating intl/Makefile
+config.status: creating intl-java/Makefile
+config.status: creating intl-csharp/Makefile
+config.status: creating gnulib-lib/Makefile
+config.status: creating src/Makefile
+config.status: creating src/gettext.sh
+config.status: creating po/Makefile.in
+config.status: creating man/Makefile
+config.status: creating man/x-to-1
+config.status: creating m4/Makefile
+config.status: creating tests/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+=== configuring in libasprintf (/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/gettext-0.19.8.1/gettext-runtime/libasprintf)
+configure: running /bin/sh ./configure --disable-option-checking '--prefix=/Users/chenjie/Documents/git/cerbero/build/build-tools'  '--libdir' '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib' '--disable-maintainer-mode' '--disable-silent-rules' '--enable-introspection' '--build=x86_64-apple-darwin12' 'build_alias=x86_64-apple-darwin12' 'CC=clang' 'CFLAGS= -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -Dlocale_charset=intl_locale_charset' 'LDFLAGS=-L/Users/chenjie/Documents/git/cerbero/build/build-tools/lib   -headerpad_max_install_names -Wl,-headerpad_max_install_names -Wno-error=unused-command-line-argument  -arch x86_64 -m64 -Wl,-arch,x86_64  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk ' 'CPPFLAGS= -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk ' 'CXX=clang++' 'CXXFLAGS= -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk ' --cache-file=/dev/null --srcdir=.
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... ../../build-aux/install-sh -c -d
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... clang
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether clang accepts -g... yes
+checking for clang option to accept ISO C89... none needed
+checking whether clang understands -c and -o together... rm: conftest.dSYM: is a directory
+yes
+checking for style of include used by make... GNU
+checking dependency style of clang... gcc3
+checking whether we are using the GNU C++ compiler... yes
+checking whether clang++ accepts -g... yes
+checking dependency style of clang++... gcc3
+checking build system type... x86_64-apple-darwin12
+checking host system type... x86_64-apple-darwin12
+checking how to run the C preprocessor... clang -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for Minix Amsterdam compiler... rm: conftest.dSYM: is a directory
+no
+checking the archiver (ar) interface... ar
+checking for ar... ar
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by clang... ld
+checking if the linker (ld) is GNU ld... no
+checking for BSD- or MS-compatible name lister (nm)... nm
+checking the name lister (nm) interface... rm: conftest.dSYM: is a directory
+BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 196608
+checking how to convert x86_64-apple-darwin12 file names to x86_64-apple-darwin12 format... func_convert_file_noop
+checking how to convert x86_64-apple-darwin12 file names to toolchain format... func_convert_file_noop
+checking for ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... rm: conftest.dSYM: is a directory
+no
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse nm output from clang object... rm: conftest.dSYM: is a directory
+ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dsymutil... dsymutil
+checking for nmedit... nmedit
+checking for lipo... lipo
+checking for otool... otool
+checking for otool64... no
+checking for -single_module linker flag... yes
+checking for -exported_symbols_list linker flag... yes
+checking for -force_load linker flag... yes
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if clang supports -fno-rtti -fno-exceptions... yes
+checking for clang option to produce PIC... -fno-common -DPIC
+checking if clang PIC flag -fno-common -DPIC works... yes
+checking if clang static flag -static works... no
+checking if clang supports -c -o file.o... yes
+checking if clang supports -c -o file.o... (cached) yes
+checking whether the clang linker (ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin12 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... clang++ -E
+checking for ld used by clang++... ld
+checking if the linker (ld) is GNU ld... no
+checking whether the clang++ linker (ld) supports shared libraries... yes
+checking for clang++ option to produce PIC... -fno-common -DPIC
+checking if clang++ PIC flag -fno-common -DPIC works... yes
+checking if clang++ static flag -static works... no
+checking if clang++ supports -c -o file.o... yes
+checking if clang++ supports -c -o file.o... (cached) yes
+checking whether the clang++ linker (ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin12 dyld
+checking how to hardcode library paths into programs... immediate
+checking features.h usability... no
+checking features.h presence... no
+checking for features.h... no
+checking for inline... inline
+checking for size_t... yes
+checking for unsigned long long int... yes
+checking for long long int... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking for mbstate_t... yes
+checking for ptrdiff_t... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for stdint.h... (cached) yes
+checking for SIZE_MAX... yes
+checking for stdint.h... (cached) yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking whether the preprocessor supports include_next... yes
+checking whether system header files limit the line length... no
+checking for complete errno.h... yes
+checking for stdint.h... (cached) yes
+checking for SIZE_MAX... (cached) yes
+checking for stdint.h... (cached) yes
+checking for snprintf... yes
+checking for vasprintf... yes
+checking for strnlen... yes
+checking for wcslen... yes
+checking for wcsnlen... yes
+checking for mbrtowc... yes
+checking for wcrtomb... yes
+checking whether _snprintf is declared... no
+checking whether printf() supports POSIX/XSI format strings... yes
+checking for dvips... /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/gettext-0.19.8.1/build-aux/missing dvips
+checking for texi2pdf... /usr/bin/texi2pdf
+checking for perl... /usr/bin/perl
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands

@@ -1,0 +1,96 @@
+Running command 'make'
+cd lib; /Applications/Xcode.app/Contents/Developer/usr/bin/make all
+clang -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -I. -c ./getopt.c
+./getopt.c:567:30: warning: implicitly declaring library function 'strcmp' with type 'int (const char *, const char *)' [-Wimplicit-function-declaration]
+      if (optind != argc && !strcmp (argv[optind], "--"))
+                             ^
+./getopt.c:567:30: note: include the header <string.h> or explicitly provide a declaration for 'strcmp'
+./getopt.c:646:21: warning: implicitly declaring library function 'strlen' with type 'unsigned long (const char *)' [-Wimplicit-function-declaration]
+                == (unsigned int) strlen (p->name))
+                                  ^
+./getopt.c:646:21: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+./getopt.c:694:6: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+                   else
+                   ^
+3 warnings generated.
+clang -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -I. -c ./getopt1.c
+clang++ -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -I. -c ./getline.cc
+clang++ -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -I. -c ./hash.cc
+rm -f libgp.a
+ar rc libgp.a getopt.o getopt1.o getline.o hash.o
+ranlib libgp.a
+cd src; /Applications/Xcode.app/Contents/Developer/usr/bin/make all
+clang++ -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -I. -I./../lib -c ./version.cc
+clang++ -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -I. -I./../lib -c ./positions.cc
+clang++ -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -I. -I./../lib -c ./options.cc
+./options.cc:282:27: warning: '&&' within '||' [-Wlogical-op-parentheses]
+          if (*arg >= 'A' && *arg <= 'Z' || *arg >= 'a' && *arg <= 'z')
+              ~~~~~~~~~~~~^~~~~~~~~~~~~~ ~~
+./options.cc:282:27: note: place parentheses around the '&&' expression to silence this warning
+          if (*arg >= 'A' && *arg <= 'Z' || *arg >= 'a' && *arg <= 'z')
+                          ^
+              (                         )
+./options.cc:282:57: warning: '&&' within '||' [-Wlogical-op-parentheses]
+          if (*arg >= 'A' && *arg <= 'Z' || *arg >= 'a' && *arg <= 'z')
+                                         ~~ ~~~~~~~~~~~~^~~~~~~~~~~~~~
+./options.cc:282:57: note: place parentheses around the '&&' expression to silence this warning
+          if (*arg >= 'A' && *arg <= 'Z' || *arg >= 'a' && *arg <= 'z')
+                                                        ^
+                                            (                         )
+./options.cc:294:34: warning: '&&' within '||' [-Wlogical-op-parentheses]
+              while (*arg >= 'A' && *arg <= 'Z' || *arg >= 'a' && *arg <= 'z' || *arg == '-');
+                     ~~~~~~~~~~~~^~~~~~~~~~~~~~ ~~
+./options.cc:294:34: note: place parentheses around the '&&' expression to silence this warning
+              while (*arg >= 'A' && *arg <= 'Z' || *arg >= 'a' && *arg <= 'z' || *arg == '-');
+                                 ^
+                     (                         )
+./options.cc:294:64: warning: '&&' within '||' [-Wlogical-op-parentheses]
+              while (*arg >= 'A' && *arg <= 'Z' || *arg >= 'a' && *arg <= 'z' || *arg == '-');
+                                                ~~ ~~~~~~~~~~~~^~~~~~~~~~~~~~
+./options.cc:294:64: note: place parentheses around the '&&' expression to silence this warning
+              while (*arg >= 'A' && *arg <= 'Z' || *arg >= 'a' && *arg <= 'z' || *arg == '-');
+                                                               ^
+                                                   (                         )
+4 warnings generated.
+clang++ -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -I. -I./../lib -c ./keyword.cc
+clang++ -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -I. -I./../lib -c ./keyword-list.cc
+clang++ -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -I. -I./../lib -c ./input.cc
+clang++ -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -I. -I./../lib -c ./bool-array.cc
+clang++ -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -I. -I./../lib -c ./hash-table.cc
+clang++ -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -I. -I./../lib -c ./search.cc
+./search.cc:163:5: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+    for (KeywordExt_List *temp = _head; temp; temp = temp->rest())
+    ^
+./search.cc:37:22: note: expanded from macro 'for'
+#define for if (0) ; else for
+                     ^
+./search.cc:418:15: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+              for (int i3 = imax; i3 >= 0; i3--)
+              ^
+./search.cc:37:22: note: expanded from macro 'for'
+#define for if (0) ; else for
+                     ^
+./search.cc:416:11: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+          for (int i2 = imax; i2 >= -1; i2--)
+          ^
+./search.cc:37:22: note: expanded from macro 'for'
+#define for if (0) ; else for
+                     ^
+./search.cc:1639:5: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+    for (unsigned int c = 0; c < _alpha_size; c++)
+    ^
+./search.cc:37:22: note: expanded from macro 'for'
+#define for if (0) ; else for
+                     ^
+4 warnings generated.
+clang++ -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -I. -I./../lib -c ./output.cc
+./output.cc:1303:22: warning: format specifies type 'int' but the argument has type 'long' [-Wformat]
+                     dup_ptr - duplicates,
+                     ^~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+clang++ -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -I. -I./../lib -c ./main.cc
+clang++ -Wall -g -O2 -arch x86_64 -m64 -Wno-error=format-nonliteral   -I/Users/chenjie/Documents/git/cerbero/build/build-tools/include  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -L/Users/chenjie/Documents/git/cerbero/build/build-tools/lib   -headerpad_max_install_names -Wl,-headerpad_max_install_names -Wno-error=unused-command-line-argument  -arch x86_64 -m64 -Wl,-arch,x86_64  -mmacosx-version-min=10.10 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk  -o gperf version.o positions.o options.o keyword.o keyword-list.o input.o bool-array.o hash-table.o search.o output.o main.o ../lib/libgp.a -lm
+cd tests; /Applications/Xcode.app/Contents/Developer/usr/bin/make all
+make[1]: Nothing to be done for `all'.
+cd doc; /Applications/Xcode.app/Contents/Developer/usr/bin/make all
+make[1]: Nothing to be done for `all'.

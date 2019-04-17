@@ -1,0 +1,56 @@
+Running command 'make install'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-recursive
+Making install in .
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in examples
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in lib
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-am
+if test no = no; then \
+	  case 'darwin12' in \
+	    darwin[56]*) \
+	      need_charset_alias=true ;; \
+	    darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+	      need_charset_alias=false ;; \
+	    *) \
+	      need_charset_alias=true ;; \
+	  esac ; \
+	else \
+	  need_charset_alias=false ; \
+	fi ; \
+	if $need_charset_alias; then \
+	  /bin/sh /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/m4-1.4.18/build-aux/install-sh -d /Users/chenjie/Documents/git/cerbero/build/build-tools/lib ; \
+	fi ; \
+	if test -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias; then \
+	  sed -f ref-add.sed /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias > /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	  /usr/bin/install -c -m 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias ; \
+	  rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	else \
+	  if $need_charset_alias; then \
+	    sed -f ref-add.sed charset.alias > /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	    /usr/bin/install -c -m 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias ; \
+	    rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	  fi ; \
+	fi
+make[4]: Nothing to be done for `install-data-am'.
+Making install in src
+ ../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+  /usr/bin/install -c m4 '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+make[3]: Nothing to be done for `install-data-am'.
+Making install in doc
+make[3]: Nothing to be done for `install-exec-am'.
+ ../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info'
+ /usr/bin/install -c -m 644 ./m4.info ./m4.info-1 ./m4.info-2 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info'
+ install-info --info-dir='/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info' '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info/m4.info'
+ ../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+ /usr/bin/install -c -m 644 ./m4.1 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+Making install in checks
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in tests
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-recursive
+Making install in .
+make[5]: Nothing to be done for `install-exec-am'.
+make[5]: Nothing to be done for `install-data-am'.

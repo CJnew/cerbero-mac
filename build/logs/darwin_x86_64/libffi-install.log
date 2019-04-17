@@ -1,0 +1,27 @@
+Running command 'make -C x86_64-apple-darwin* install'
+Making install in include
+make[2]: Nothing to be done for `install-exec-am'.
+ ../../install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libffi-3.99999/include'
+ /usr/bin/install -c -m 644 ffi.h ffitarget.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libffi-3.99999/include'
+Making install in testsuite
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+Making install in man
+make[2]: Nothing to be done for `install-exec-am'.
+ ../../install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man3'
+ /usr/bin/install -c -m 644 ../../man/ffi.3 ../../man/ffi_call.3 ../../man/ffi_prep_cif.3 ../../man/ffi_prep_cif_var.3 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man3'
+Making install in doc
+make[2]: Nothing to be done for `install-exec-am'.
+ ../../install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info'
+ /usr/bin/install -c -m 644 ../../doc/libffi.info '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info'
+ install-info --info-dir='/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info' '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info/libffi.info'
+ ../install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+ /bin/sh ./libtool   --mode=install /usr/bin/install -c   libffi.la '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+libtool: install: /usr/bin/install -c .libs/libffi.7.dylib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libffi.7.dylib
+libtool: install: (cd /Users/chenjie/Documents/git/cerbero/build/build-tools/lib && { ln -s -f libffi.7.dylib libffi.dylib || { rm -f libffi.dylib && ln -s libffi.7.dylib libffi.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/libffi.lai /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libffi.la
+libtool: install: /usr/bin/install -c .libs/libffi.a /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libffi.a
+libtool: install: chmod 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libffi.a
+libtool: install: ranlib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libffi.a
+ ../install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libffi.pc '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/pkgconfig'

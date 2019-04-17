@@ -1,0 +1,59 @@
+Running command 'make install'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-recursive
+Making install in bin
+test -z "/Users/chenjie/Documents/git/cerbero/build/build-tools/bin" || ../build-aux/install-sh -c -d "/Users/chenjie/Documents/git/cerbero/build/build-tools/bin"
+ /usr/bin/install -c autom4te autoconf autoheader autoreconf ifnames autoscan autoupdate '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+make[3]: Nothing to be done for `install-data-am'.
+Making install in .
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf" || build-aux/install-sh -c -d "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf"
+ /usr/bin/install -c -m 644 ./INSTALL '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf'
+Making install in lib
+Making install in Autom4te
+make[4]: Nothing to be done for `install-exec-am'.
+test -z "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/Autom4te" || ../../build-aux/install-sh -c -d "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/Autom4te"
+ /usr/bin/install -c -m 644 C4che.pm ChannelDefs.pm Channels.pm Configure_ac.pm FileUtils.pm General.pm Getopt.pm Request.pm XFile.pm '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/Autom4te'
+Making install in m4sugar
+make[4]: Nothing to be done for `install-exec-am'.
+test -z "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/m4sugar" || ../../build-aux/install-sh -c -d "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/m4sugar"
+ /usr/bin/install -c -m 644 m4sugar.m4 foreach.m4 m4sh.m4 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/m4sugar'
+test -z "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/m4sugar" || ../../build-aux/install-sh -c -d "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/m4sugar"
+ /usr/bin/install -c -m 644 version.m4 m4sugar.m4f m4sh.m4f '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/m4sugar'
+Making install in autoconf
+make[4]: Nothing to be done for `install-exec-am'.
+test -z "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/autoconf" || ../../build-aux/install-sh -c -d "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/autoconf"
+ /usr/bin/install -c -m 644 autoconf.m4 general.m4 status.m4 oldnames.m4 specific.m4 autoheader.m4 autoupdate.m4 autotest.m4 autoscan.m4 lang.m4 c.m4 erlang.m4 fortran.m4 functions.m4 go.m4 headers.m4 types.m4 libs.m4 programs.m4 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/autoconf'
+test -z "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/autoconf" || ../../build-aux/install-sh -c -d "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/autoconf"
+ /usr/bin/install -c -m 644 autoconf.m4f '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/autoconf'
+Making install in autotest
+make[4]: Nothing to be done for `install-exec-am'.
+test -z "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/autotest" || ../../build-aux/install-sh -c -d "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/autotest"
+ /usr/bin/install -c -m 644 autotest.m4 general.m4 specific.m4 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/autotest'
+test -z "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/autotest" || ../../build-aux/install-sh -c -d "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/autotest"
+ /usr/bin/install -c -m 644 autotest.m4f '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/autotest'
+Making install in autoscan
+make[4]: Nothing to be done for `install-exec-am'.
+test -z "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/autoscan" || ../../build-aux/install-sh -c -d "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/autoscan"
+ /usr/bin/install -c -m 644 autoscan.list '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf/autoscan'
+Making install in emacs
+make[4]: Nothing to be done for `install-exec-am'.
+ /usr/bin/install -c -m 644 'autoconf-mode.el' '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/emacs/site-lisp/autoconf-mode.el'
+ /usr/bin/install -c -m 644 'autoconf-mode.elc' '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/emacs/site-lisp/autoconf-mode.elc'
+ /usr/bin/install -c -m 644 'autotest-mode.el' '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/emacs/site-lisp/autotest-mode.el'
+ /usr/bin/install -c -m 644 'autotest-mode.elc' '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/emacs/site-lisp/autotest-mode.elc'
+make[4]: Nothing to be done for `install-exec-am'.
+test -z "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf" || ../build-aux/install-sh -c -d "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf"
+ /usr/bin/install -c -m 644 autom4te.cfg '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf'
+Making install in doc
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info" || ../build-aux/install-sh -c -d "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info"
+ /usr/bin/install -c -m 644 ./autoconf.info ./standards.info '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info'
+ install-info --info-dir='/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info' '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info/autoconf.info'
+ install-info --info-dir='/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info' '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info/standards.info'
+Making install in tests
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in man
+make[3]: Nothing to be done for `install-exec-am'.
+test -z "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1" || ../build-aux/install-sh -c -d "/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1"
+ /usr/bin/install -c -m 644 ./autoconf.1 ./autoheader.1 ./autom4te.1 ./autoreconf.1 ./autoscan.1 ./autoupdate.1 ./ifnames.1 ./config.guess.1 ./config.sub.1 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'

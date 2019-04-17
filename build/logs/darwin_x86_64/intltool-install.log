@@ -1,0 +1,20 @@
+Running command 'make install'
+Making install in tests
+Making install in cases
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in results
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in doc
+make[2]: Nothing to be done for `install-exec-am'.
+ .././install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man8'
+ /usr/bin/install -c -m 644 intltoolize.8 intltool-extract.8 intltool-merge.8 intltool-prepare.8 intltool-update.8 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man8'
+ ./install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+ /usr/bin/install -c intltool-extract intltool-merge intltool-update intltoolize intltool-prepare '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+ ./install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/aclocal'
+ /usr/bin/install -c -m 644 intltool.m4 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/aclocal'
+ ./install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/intltool'
+ /usr/bin/install -c -m 644 Makefile.in.in '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/intltool'

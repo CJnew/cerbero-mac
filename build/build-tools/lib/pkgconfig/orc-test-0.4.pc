@@ -1,0 +1,12 @@
+prefix=/Users/chenjie/Documents/git/cerbero/build/build-tools
+exec_prefix=${prefix}
+libdir=/Users/chenjie/Documents/git/cerbero/build/build-tools/lib
+includedir=${prefix}/include/orc-0.4
+
+Name: orc-test-0.4
+Description: Test Library of Optimized Inner Loops Runtime Compiler
+Version: 0.4.28.1
+Requires: orc-0.4
+Libs: -L${libdir} -lorc-test-0.4
+Libs.private:   -lpthread
+Cflags: -I${includedir}

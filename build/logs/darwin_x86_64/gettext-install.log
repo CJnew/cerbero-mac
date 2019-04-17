@@ -1,0 +1,105 @@
+Running command 'cd /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/gettext-0.19.8.1/gettext-runtime/intl && make PACKAGE=gettext-tools install'
+if { test "gettext-tools" = "gettext-runtime" || test "gettext-tools" = "gettext-tools"; } \
+	   && test 'yes' = yes; then \
+	  ../../build-aux/install-sh -c -d /Users/chenjie/Documents/git/cerbero/build/build-tools/lib /Users/chenjie/Documents/git/cerbero/build/build-tools/include; \
+	  /usr/bin/install -c -m 644 libintl.h /Users/chenjie/Documents/git/cerbero/build/build-tools/include/libintl.h; \
+	  /bin/sh ../libtool --mode=install \
+	    /usr/bin/install -c -m 644 libintl.la /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libintl.la; \
+	  if test "no" = yes; then \
+	    dependencies=`sed -n -e 's,^dependency_libs=\(.*\),\1,p' < /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libintl.la | sed -e "s,^',," -e "s,'\$,,"`; \
+	    if test -n "$dependencies"; then \
+	      rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libintl.la; \
+	    fi; \
+	  fi; \
+	else \
+	  : ; \
+	fi
+libtool: install: /usr/bin/install -c -m 644 .libs/libintl.8.dylib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libintl.8.dylib
+libtool: install: (cd /Users/chenjie/Documents/git/cerbero/build/build-tools/lib && { ln -s -f libintl.8.dylib libintl.dylib || { rm -f libintl.dylib && ln -s libintl.8.dylib libintl.dylib; }; })
+libtool: install: /usr/bin/install -c -m 644 .libs/libintl.lai /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libintl.la
+libtool: install: /usr/bin/install -c -m 644 .libs/libintl.a /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libintl.a
+libtool: install: chmod 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libintl.a
+libtool: install: ranlib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libintl.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libintl.a(threadlib.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libintl.a(printf.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libintl.a(xsize.o) has no symbols
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib: file: /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libintl.a(osdep.o) has no symbols
+if test "gettext-tools" = "gettext-tools" \
+	   && test 'yes' = no \
+	   && test no != no; then \
+	  ../../build-aux/install-sh -c -d /Users/chenjie/Documents/git/cerbero/build/build-tools/lib; \
+	  /bin/sh ../libtool --mode=install \
+	    /usr/bin/install -c -m 644 libgnuintl.la /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libgnuintl.la; \
+	  rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/preloadable_libintl.so; \
+	  /usr/bin/install -c -m 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libgnuintl.so /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/preloadable_libintl.so; \
+	  /bin/sh ../libtool --mode=uninstall \
+	    rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libgnuintl.la; \
+	else \
+	  : ; \
+	fi
+if test 'yes' = yes; then \
+	  if test no = no; then \
+	    case 'darwin12' in \
+	      darwin[56]*) \
+	        need_charset_alias=true ;; \
+	      darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+	        need_charset_alias=false ;; \
+	      *) \
+	        need_charset_alias=true ;; \
+	    esac; \
+	  else \
+	    need_charset_alias=false; \
+	  fi; \
+	  if $need_charset_alias; then \
+	    ../../build-aux/install-sh -c -d /Users/chenjie/Documents/git/cerbero/build/build-tools/lib; \
+	  fi; \
+	  temp=/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/t-charset.alias; \
+	  dest=/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias; \
+	  if test -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias; then \
+	    orig=/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias; \
+	    sed -f ref-add.sed $orig > $temp; \
+	    /usr/bin/install -c -m 644 $temp $dest; \
+	    rm -f $temp; \
+	  else \
+	    if $need_charset_alias; then \
+	      orig=charset.alias; \
+	      sed -f ref-add.sed $orig > $temp; \
+	      /usr/bin/install -c -m 644 $temp $dest; \
+	      rm -f $temp; \
+	    fi; \
+	  fi; \
+	  ../../build-aux/install-sh -c -d /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale; \
+	  test -f /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/locale.alias \
+	    && orig=/Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/locale.alias \
+	    || orig=./locale.alias; \
+	  temp=/Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/t-locale.alias; \
+	  dest=/Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/locale.alias; \
+	  sed -f ref-add.sed $orig > $temp; \
+	  /usr/bin/install -c -m 644 $temp $dest; \
+	  rm -f $temp; \
+	else \
+	  : ; \
+	fi
+if test "gettext-tools" = "gettext-tools"; then \
+	  ../../build-aux/install-sh -c -d /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/intl; \
+	  /usr/bin/install -c -m 644 VERSION /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/intl/VERSION; \
+	  dists="COPYING.LIB Makefile.in config.charset locale.alias ref-add.sin ref-del.sin export.h libintl.rc gmo.h gettextP.h hash-string.h loadinfo.h plural-exp.h eval-plural.h localcharset.h lock.h relocatable.h tsearch.h tsearch.c verify.h xsize.h printf-args.h printf-args.c printf-parse.h wprintf-parse.h printf-parse.c vasnprintf.h vasnwprintf.h vasnprintf.c os2compat.h libgnuintl.in.h bindtextdom.c dcgettext.c dgettext.c gettext.c finddomain.c hash-string.c loadmsgcat.c localealias.c textdomain.c l10nflist.c explodename.c dcigettext.c dcngettext.c dngettext.c ngettext.c plural.y plural-exp.c localcharset.c threadlib.c lock.c relocatable.c langprefs.c localename.c log.c printf.c setlocale.c version.c xsize.c osdep.c os2compat.c intl-exports.c intl-compat.c"; \
+	  for file in $dists; do \
+	    /usr/bin/install -c -m 644 ./$file \
+			    /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/intl/$file; \
+	  done; \
+	  chmod a+x /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/intl/config.charset; \
+	  dists="plural.c"; \
+	  for file in $dists; do \
+	    if test -f $file; then dir=.; else dir=.; fi; \
+	    /usr/bin/install -c -m 644 $dir/$file \
+			    /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/intl/$file; \
+	  done; \
+	  dists="xopen-msg.sed linux-msg.sed po2tbl.sed.in cat-compat.c COPYING.LIB-2 COPYING.LIB-2.0 COPYING.LIB-2.1 gettext.h libgettext.h plural-eval.c libgnuintl.h libgnuintl.h_vms Makefile.vms libgnuintl.h.msvc-static libgnuintl.h.msvc-shared Makefile.msvc"; \
+	  for file in $dists; do \
+	    rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/intl/$file; \
+	  done; \
+	else \
+	  : ; \
+	fi
+install: VERSION: No such file or directory

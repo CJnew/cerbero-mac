@@ -1,0 +1,17 @@
+Running command 'mkdir -p /Users/chenjie/Documents/git/cerbero/build/sources/local/gas-preprocessor'
+Running command 'git init'
+已初始化空的 Git 仓库于 /Users/chenjie/Documents/git/cerbero/build/sources/local/gas-preprocessor/.git/
+Running command 'git config user.email'
+467116811@qq.com
+Running command 'git config user.name'
+Jie Chen
+Running command 'git remote add origin git://git.libav.org/gas-preprocessor.git'
+Running command 'git fetch --all'
+正在获取 origin
+来自 git://git.libav.org/gas-preprocessor
+ * [新分支]          master     -> origin/master
+Running command 'git reset --hard fad9080da871bb7924431a5e22fdaccae56b5950'
+HEAD 现在位于 fad9080 Fix inconsistent indentation
+Running command 'git submodule init'
+Running command 'git submodule sync'
+Running command 'git submodule update'

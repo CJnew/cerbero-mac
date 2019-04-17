@@ -1,0 +1,23 @@
+# -*- Mode: Python -*- vi:si:et:sw=4:sts=4:ts=4:syntax=python
+
+
+class Recipe(recipe.Recipe):
+    name = 'nopoll'
+    version = '0.4.6'
+    commit = 'e80b74a'
+    remotes = {'origin': 'https://github.com/ASPLes/nopoll.git'}
+    licenses = [License.LGPLv2_1]
+    config_sh = './autogen.sh'
+    deps = ['openssl']
+    patches = ['nopoll/0001-Do-not-build-tests.patch',
+               'nopoll/0002-Always-use-libtoolize.patch']
+
+    files_devel = ['include/nopoll',
+                   'lib/pkgconfig/nopoll.pc']
+
+    files_libs = ['libnopoll']
+    configure_options = '--disable-nopoll-doc'
+
+    def prepare(self):
+        if self.config.target_platform in [Platform.IOS, Platform.ANDROID]:
+            self.configure_options += ' LIBS=-lcrypto'

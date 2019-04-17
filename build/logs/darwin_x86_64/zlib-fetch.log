@@ -1,0 +1,4 @@
+Running command 'curl -L  -k http://zlib.net/fossils/zlib-1.2.11.tar.gz -o /Users/chenjie/Documents/git/cerbero/build/sources/local/zlib-1.2.11/zlib-1.2.11.tar.gz '
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 17  593k   17  105k    0     0  90460      0  0:00:06  0:00:01  0:00:05 90466100  593k  100  593k    0     0   337k      0  0:00:01  0:00:01 --:--:--  337k

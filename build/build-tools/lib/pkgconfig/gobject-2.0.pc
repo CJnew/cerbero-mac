@@ -1,0 +1,12 @@
+prefix=/Users/chenjie/Documents/git/cerbero/build/build-tools
+exec_prefix=${prefix}
+libdir=/Users/chenjie/Documents/git/cerbero/build/build-tools/lib
+includedir=${prefix}/include
+
+Name: GObject
+Description: GLib Type, Object, Parameter and Signal Library
+Requires: glib-2.0
+Version: 2.54.2
+Libs: -L${libdir} -lgobject-2.0
+Libs.private: -L/Users/chenjie/Documents/git/cerbero/build/build-tools/lib -lffi
+Cflags:

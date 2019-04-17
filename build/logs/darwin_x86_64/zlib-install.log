@@ -1,0 +1,15 @@
+Running command 'make install'
+rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libz.a
+cp libz.a /Users/chenjie/Documents/git/cerbero/build/build-tools/lib
+chmod 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libz.a
+cp libz.1.2.11.dylib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib
+chmod 755 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/libz.1.2.11.dylib
+rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man3/zlib.3
+cp zlib.3 /Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man3
+chmod 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man3/zlib.3
+rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/pkgconfig/zlib.pc
+cp zlib.pc /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/pkgconfig
+chmod 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/pkgconfig/zlib.pc
+rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/include/zlib.h /Users/chenjie/Documents/git/cerbero/build/build-tools/include/zconf.h
+cp zlib.h zconf.h /Users/chenjie/Documents/git/cerbero/build/build-tools/include
+chmod 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/include/zlib.h /Users/chenjie/Documents/git/cerbero/build/build-tools/include/zconf.h

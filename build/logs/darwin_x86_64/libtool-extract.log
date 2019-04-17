@@ -1,0 +1,12 @@
+Running command 'mkdir -p /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/libtool-2.4.6'
+Running command 'git init'
+已初始化空的 Git 仓库于 /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/libtool-2.4.6/.git/
+Running command 'git config user.email'
+467116811@qq.com
+Running command 'git config user.name'
+Jie Chen
+Running command 'git add --force -A .'
+Running command 'git commit -m "Initial commit" > /dev/null 2>&1'
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/build-tools/libtool/0001-Add-support-for-weak_framework-linking-on-Darwin.patch'
+应用：Add support for -weak_framework linking on Darwin
+应用：Add support for -weak_framework linking on Darwin

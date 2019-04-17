@@ -1,0 +1,155 @@
+Running command 'make install'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-recursive
+Making install in po
+installing da.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/da/LC_MESSAGES/bison.mo
+installing de.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/de/LC_MESSAGES/bison.mo
+installing el.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/el/LC_MESSAGES/bison.mo
+installing eo.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/eo/LC_MESSAGES/bison.mo
+installing es.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/es/LC_MESSAGES/bison.mo
+installing et.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/et/LC_MESSAGES/bison.mo
+installing fi.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/fi/LC_MESSAGES/bison.mo
+installing fr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/fr/LC_MESSAGES/bison.mo
+installing ga.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ga/LC_MESSAGES/bison.mo
+installing hr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/hr/LC_MESSAGES/bison.mo
+installing id.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/id/LC_MESSAGES/bison.mo
+installing it.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/it/LC_MESSAGES/bison.mo
+installing ja.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ja/LC_MESSAGES/bison.mo
+installing ms.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ms/LC_MESSAGES/bison.mo
+installing nb.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/nb/LC_MESSAGES/bison.mo
+installing nl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/nl/LC_MESSAGES/bison.mo
+installing pl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pl/LC_MESSAGES/bison.mo
+installing pt.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pt/LC_MESSAGES/bison.mo
+installing pt_BR.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pt_BR/LC_MESSAGES/bison.mo
+installing ro.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ro/LC_MESSAGES/bison.mo
+installing ru.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ru/LC_MESSAGES/bison.mo
+installing sr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sr/LC_MESSAGES/bison.mo
+installing sv.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sv/LC_MESSAGES/bison.mo
+installing tr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/tr/LC_MESSAGES/bison.mo
+installing uk.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/uk/LC_MESSAGES/bison.mo
+installing vi.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/vi/LC_MESSAGES/bison.mo
+installing zh_CN.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/zh_CN/LC_MESSAGES/bison.mo
+installing zh_TW.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/zh_TW/LC_MESSAGES/bison.mo
+if test "bison" = "gettext-tools"; then \
+	  ../build-aux/install-sh -c -d /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/po; \
+	  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+	    /usr/bin/install -c -m 644 ./$file \
+			    /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/po/$file; \
+	  done; \
+	  for file in Makevars; do \
+	    rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/po/$file; \
+	  done; \
+	else \
+	  : ; \
+	fi
+Making install in runtime-po
+installing ast.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ast/LC_MESSAGES/bison-runtime.mo
+installing da.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/da/LC_MESSAGES/bison-runtime.mo
+installing de.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/de/LC_MESSAGES/bison-runtime.mo
+installing el.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/el/LC_MESSAGES/bison-runtime.mo
+installing eo.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/eo/LC_MESSAGES/bison-runtime.mo
+installing es.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/es/LC_MESSAGES/bison-runtime.mo
+installing et.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/et/LC_MESSAGES/bison-runtime.mo
+installing fi.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/fi/LC_MESSAGES/bison-runtime.mo
+installing fr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/fr/LC_MESSAGES/bison-runtime.mo
+installing ga.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ga/LC_MESSAGES/bison-runtime.mo
+installing gl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/gl/LC_MESSAGES/bison-runtime.mo
+installing hr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/hr/LC_MESSAGES/bison-runtime.mo
+installing hu.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/hu/LC_MESSAGES/bison-runtime.mo
+installing ia.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ia/LC_MESSAGES/bison-runtime.mo
+installing id.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/id/LC_MESSAGES/bison-runtime.mo
+installing it.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/it/LC_MESSAGES/bison-runtime.mo
+installing ja.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ja/LC_MESSAGES/bison-runtime.mo
+installing ky.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ky/LC_MESSAGES/bison-runtime.mo
+installing lt.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/lt/LC_MESSAGES/bison-runtime.mo
+installing lv.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/lv/LC_MESSAGES/bison-runtime.mo
+installing ms.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ms/LC_MESSAGES/bison-runtime.mo
+installing nb.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/nb/LC_MESSAGES/bison-runtime.mo
+installing nl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/nl/LC_MESSAGES/bison-runtime.mo
+installing pl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pl/LC_MESSAGES/bison-runtime.mo
+installing pt.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pt/LC_MESSAGES/bison-runtime.mo
+installing pt_BR.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pt_BR/LC_MESSAGES/bison-runtime.mo
+installing ro.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ro/LC_MESSAGES/bison-runtime.mo
+installing ru.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ru/LC_MESSAGES/bison-runtime.mo
+installing sl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sl/LC_MESSAGES/bison-runtime.mo
+installing sq.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sq/LC_MESSAGES/bison-runtime.mo
+installing sr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sr/LC_MESSAGES/bison-runtime.mo
+installing sv.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sv/LC_MESSAGES/bison-runtime.mo
+installing th.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/th/LC_MESSAGES/bison-runtime.mo
+installing tr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/tr/LC_MESSAGES/bison-runtime.mo
+installing uk.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/uk/LC_MESSAGES/bison-runtime.mo
+installing vi.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/vi/LC_MESSAGES/bison-runtime.mo
+installing zh_CN.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/zh_CN/LC_MESSAGES/bison-runtime.mo
+installing zh_TW.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/zh_TW/LC_MESSAGES/bison-runtime.mo
+if test "bison" = "gettext-tools"; then \
+	  ../build-aux/install-sh -c -d /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/po; \
+	  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+	    /usr/bin/install -c -m 644 ./$file \
+			    /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/po/$file; \
+	  done; \
+	  for file in Makevars; do \
+	    rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/po/$file; \
+	  done; \
+	else \
+	  : ; \
+	fi
+Making install in .
+src/bison --version >doc/bison.help.tmp
+src/bison --help   >>doc/bison.help.tmp
+./build-aux/move-if-change doc/bison.help.tmp doc/bison.help
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+  /usr/bin/install -c src/bison '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+ /usr/bin/install -c src/yacc '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+if test no = no; then \
+	  case 'darwin12' in \
+	    darwin[56]*) \
+	      need_charset_alias=true ;; \
+	    darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+	      need_charset_alias=false ;; \
+	    *) \
+	      need_charset_alias=true ;; \
+	  esac ; \
+	else \
+	  need_charset_alias=false ; \
+	fi ; \
+	if $need_charset_alias; then \
+	  /bin/sh /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/bison-3.0.4/build-aux/install-sh -d /Users/chenjie/Documents/git/cerbero/build/build-tools/lib ; \
+	fi ; \
+	if test -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias; then \
+	  sed -f lib/ref-add.sed /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias > /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	  /usr/bin/install -c -m 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias ; \
+	  rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	else \
+	  if $need_charset_alias; then \
+	    sed -f lib/ref-add.sed lib/charset.alias > /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	    /usr/bin/install -c -m 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias ; \
+	    rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	  fi ; \
+	fi
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+ /usr/bin/install -c -m 644  lib/liby.a '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+ ( cd '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib' && ranlib liby.a )
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/aclocal'
+ /usr/bin/install -c -m 644 m4/bison-i18n.m4 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/aclocal'
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/bison/examples/calc++'
+ /usr/bin/install -c -m 644 examples/calc++/calc++-driver.cc examples/calc++/calc++-driver.hh examples/calc++/calc++-scanner.ll examples/calc++/calc++.cc examples/calc++/calc++-parser.yy '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/bison/examples/calc++'
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/bison'
+ /usr/bin/install -c -m 644 AUTHORS COPYING NEWS README THANKS TODO '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/bison'
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/bison/m4sugar'
+ /usr/bin/install -c -m 644 data/m4sugar/foreach.m4 data/m4sugar/m4sugar.m4 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/bison/m4sugar'
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/bison'
+ /usr/bin/install -c -m 644 data/README data/bison.m4 data/c++-skel.m4 data/c++.m4 data/c-like.m4 data/c-skel.m4 data/c.m4 data/glr.c data/glr.cc data/java-skel.m4 data/java.m4 data/lalr1.cc data/lalr1.java data/location.cc data/stack.hh data/variant.hh data/yacc.c '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/bison'
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/bison/xslt'
+ /usr/bin/install -c -m 644 data/xslt/bison.xsl data/xslt/xml2dot.xsl data/xslt/xml2text.xsl data/xslt/xml2xhtml.xsl '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/bison/xslt'
+src/bison --version >doc/bison.help.tmp
+src/bison --help   >>doc/bison.help.tmp
+./build-aux/move-if-change doc/bison.help.tmp doc/bison.help
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info'
+ /usr/bin/install -c -m 644 ./doc/bison.info '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info'
+ install-info --info-dir='/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info' '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info/bison.info'
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+ /usr/bin/install -c -m 644 ./doc/bison.1 doc/yacc.1 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/bison/examples/mfcalc'
+ /usr/bin/install -c -m 644 examples/mfcalc/calc.h examples/mfcalc/mfcalc.y '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/bison/examples/mfcalc'
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/bison/examples/rpcalc'
+ /usr/bin/install -c -m 644 examples/rpcalc/rpcalc.y '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/bison/examples/rpcalc'

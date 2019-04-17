@@ -1,0 +1,206 @@
+Running command 'make'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  all-recursive
+Making all in bin
+rm -f autom4te autom4te.tmp
+srcdir=''; \
+	  test -f ./autom4te.in || srcdir=./; \
+	  sed -e 's|@SHELL[@]|/bin/sh|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin|g' -e 's|@pkgdatadir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf|g' -e 's|@prefix[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|awk|g' -e 's|@RELEASE_YEAR[@]|'`sed 's/^\([0-9][0-9][0-9][0-9]\).*/\1/;q' ../ChangeLog`'|g' -e 's|@VERSION[@]|2.69|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from autom4te.in; do not edit by hand.|g' ${srcdir}autom4te.in >autom4te.tmp
+chmod +x autom4te.tmp
+chmod a-w autom4te.tmp
+mv autom4te.tmp autom4te
+cd ../lib && /Applications/Xcode.app/Contents/Developer/usr/bin/make  autom4te.cfg
+rm -f autom4te.cfg autom4te.tmp
+sed -e 's|@SHELL[@]|/bin/sh|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@bindir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin|g' -e 's|@pkgdatadir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf|g' -e 's|@prefix[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin/m4|g' -e 's|@AWK[@]|awk|g' -e 's|@VERSION[@]|2.69|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' ./autom4te.in >autom4te.tmp
+chmod a-w autom4te.tmp
+mv autom4te.tmp autom4te.cfg
+cd ../lib/m4sugar && /Applications/Xcode.app/Contents/Developer/usr/bin/make  version.m4
+:;{ \
+	  echo '# This file is part of -*- Autoconf -*-.' && \
+	  echo '# Version of Autoconf.' && \
+	  echo '# Copyright (C) 1999, 2000, 2001, 2002, 2006, 2007, 2009' && \
+	  echo '# Free Software Foundation, Inc.' && \
+	  echo  &&\
+	  echo 'm4_define([m4_PACKAGE_NAME],      [GNU Autoconf])' && \
+	  echo 'm4_define([m4_PACKAGE_TARNAME],   [autoconf])' && \
+	  echo 'm4_define([m4_PACKAGE_VERSION],   [2.69])' && \
+	  echo 'm4_define([m4_PACKAGE_STRING],    [GNU Autoconf 2.69])' && \
+	  echo 'm4_define([m4_PACKAGE_BUGREPORT], [bug-autoconf@gnu.org])' && \
+	  echo 'm4_define([m4_PACKAGE_URL],       [http://www.gnu.org/software/autoconf/])' && \
+	  echo 'm4_define([m4_PACKAGE_YEAR],      ['`sed 's/^\([0-9][0-9][0-9][0-9]\).*/\1/;q' ../../ChangeLog`'])'; \
+	} > version.m4-t
+mv version.m4-t version.m4
+autom4te_perllibdir='..'/lib AUTOM4TE_CFG='../lib/autom4te.cfg'         ../bin/autom4te -B '..'/lib -B '..'/lib         --language M4sh --cache '' --melt ./autoconf.as -o autoconf.in
+rm -f autoconf autoconf.tmp
+srcdir=''; \
+	  test -f ./autoconf.in || srcdir=./; \
+	  sed -e 's|@SHELL[@]|/bin/sh|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin|g' -e 's|@pkgdatadir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf|g' -e 's|@prefix[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|awk|g' -e 's|@RELEASE_YEAR[@]|'`sed 's/^\([0-9][0-9][0-9][0-9]\).*/\1/;q' ../ChangeLog`'|g' -e 's|@VERSION[@]|2.69|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from autoconf.in; do not edit by hand.|g' ${srcdir}autoconf.in >autoconf.tmp
+chmod +x autoconf.tmp
+chmod a-w autoconf.tmp
+mv autoconf.tmp autoconf
+rm -f autoheader autoheader.tmp
+srcdir=''; \
+	  test -f ./autoheader.in || srcdir=./; \
+	  sed -e 's|@SHELL[@]|/bin/sh|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin|g' -e 's|@pkgdatadir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf|g' -e 's|@prefix[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|awk|g' -e 's|@RELEASE_YEAR[@]|'`sed 's/^\([0-9][0-9][0-9][0-9]\).*/\1/;q' ../ChangeLog`'|g' -e 's|@VERSION[@]|2.69|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from autoheader.in; do not edit by hand.|g' ${srcdir}autoheader.in >autoheader.tmp
+chmod +x autoheader.tmp
+chmod a-w autoheader.tmp
+mv autoheader.tmp autoheader
+rm -f autoreconf autoreconf.tmp
+srcdir=''; \
+	  test -f ./autoreconf.in || srcdir=./; \
+	  sed -e 's|@SHELL[@]|/bin/sh|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin|g' -e 's|@pkgdatadir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf|g' -e 's|@prefix[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|awk|g' -e 's|@RELEASE_YEAR[@]|'`sed 's/^\([0-9][0-9][0-9][0-9]\).*/\1/;q' ../ChangeLog`'|g' -e 's|@VERSION[@]|2.69|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from autoreconf.in; do not edit by hand.|g' ${srcdir}autoreconf.in >autoreconf.tmp
+chmod +x autoreconf.tmp
+chmod a-w autoreconf.tmp
+mv autoreconf.tmp autoreconf
+rm -f ifnames ifnames.tmp
+srcdir=''; \
+	  test -f ./ifnames.in || srcdir=./; \
+	  sed -e 's|@SHELL[@]|/bin/sh|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin|g' -e 's|@pkgdatadir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf|g' -e 's|@prefix[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|awk|g' -e 's|@RELEASE_YEAR[@]|'`sed 's/^\([0-9][0-9][0-9][0-9]\).*/\1/;q' ../ChangeLog`'|g' -e 's|@VERSION[@]|2.69|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from ifnames.in; do not edit by hand.|g' ${srcdir}ifnames.in >ifnames.tmp
+chmod +x ifnames.tmp
+chmod a-w ifnames.tmp
+mv ifnames.tmp ifnames
+rm -f autoscan autoscan.tmp
+srcdir=''; \
+	  test -f ./autoscan.in || srcdir=./; \
+	  sed -e 's|@SHELL[@]|/bin/sh|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin|g' -e 's|@pkgdatadir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf|g' -e 's|@prefix[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|awk|g' -e 's|@RELEASE_YEAR[@]|'`sed 's/^\([0-9][0-9][0-9][0-9]\).*/\1/;q' ../ChangeLog`'|g' -e 's|@VERSION[@]|2.69|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from autoscan.in; do not edit by hand.|g' ${srcdir}autoscan.in >autoscan.tmp
+chmod +x autoscan.tmp
+chmod a-w autoscan.tmp
+mv autoscan.tmp autoscan
+rm -f autoupdate autoupdate.tmp
+srcdir=''; \
+	  test -f ./autoupdate.in || srcdir=./; \
+	  sed -e 's|@SHELL[@]|/bin/sh|g' -e 's|@PERL[@]|/usr/bin/perl|g' -e 's|@PERL_FLOCK[@]|yes|g' -e 's|@bindir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin|g' -e 's|@pkgdatadir[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/share/autoconf|g' -e 's|@prefix[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools|g' -e 's|@autoconf-name[@]|'`echo autoconf | sed 's,x,x,'`'|g' -e 's|@autoheader-name[@]|'`echo autoheader | sed 's,x,x,'`'|g' -e 's|@autom4te-name[@]|'`echo autom4te | sed 's,x,x,'`'|g' -e 's|@M4[@]|/Users/chenjie/Documents/git/cerbero/build/build-tools/bin/m4|g' -e 's|@M4_DEBUGFILE[@]|--debugfile|g' -e 's|@M4_GNU[@]|--gnu|g' -e 's|@AWK[@]|awk|g' -e 's|@RELEASE_YEAR[@]|'`sed 's/^\([0-9][0-9][0-9][0-9]\).*/\1/;q' ../ChangeLog`'|g' -e 's|@VERSION[@]|2.69|g' -e 's|@PACKAGE_NAME[@]|GNU Autoconf|g' -e 's|@configure_input[@]|Generated from autoupdate.in; do not edit by hand.|g' ${srcdir}autoupdate.in >autoupdate.tmp
+chmod +x autoupdate.tmp
+chmod a-w autoupdate.tmp
+mv autoupdate.tmp autoupdate
+Making all in .
+make[2]: Nothing to be done for `all-am'.
+Making all in lib
+Making all in Autom4te
+make[3]: Nothing to be done for `all'.
+Making all in m4sugar
+autom4te_perllibdir='../..'/lib AUTOM4TE_CFG='../../lib/autom4te.cfg'         ../../bin/autom4te -B '../..'/lib -B '../..'/lib        				\
+		--language=m4sugar			\
+		--freeze			\
+		--output=m4sugar.m4f
+autom4te_perllibdir='../..'/lib AUTOM4TE_CFG='../../lib/autom4te.cfg'         ../../bin/autom4te -B '../..'/lib -B '../..'/lib        				\
+		--language=m4sh			\
+		--freeze			\
+		--output=m4sh.m4f
+Making all in autoconf
+autom4te_perllibdir='../..'/lib AUTOM4TE_CFG='../../lib/autom4te.cfg'         ../../bin/autom4te -B '../..'/lib -B '../..'/lib        				\
+		--language=autoconf			\
+		--freeze			\
+		--output=autoconf.m4f
+Making all in autotest
+autom4te_perllibdir='../..'/lib AUTOM4TE_CFG='../../lib/autom4te.cfg'         ../../bin/autom4te -B '../..'/lib -B '../..'/lib        				\
+		--language=autotest			\
+		--freeze			\
+		--output=autotest.m4f
+Making all in autoscan
+echo '# Automatically Generated: do not edit this file' >autoscan.list
+sed '/^[#]/!q' ./autoscan.pre                  >>autoscan.list
+( \
+	  sed -n '/^[^#]/p' ./autoscan.pre; \
+	  autom4te_perllibdir='../..'/lib AUTOM4TE_CFG='../../lib/autom4te.cfg'         ../../bin/autom4te -B '../..'/lib -B '../..'/lib         --cache '' -M -l autoconf -t'AN_OUTPUT:$1: $2		$3' \
+	) | LC_ALL=C sort                                      >>autoscan.list
+Making all in emacs
+WARNING: Warnings can be ignored. :-)
+if test "emacs" != no; then \
+	  set x; \
+	  list='autoconf-mode.el autotest-mode.el'; for p in $list; do \
+	    if test -f "$p"; then d=; else d="./"; fi; \
+	    set x "$@" "$d$p"; shift; \
+	  done; \
+	  shift; \
+	  EMACS="emacs" /bin/sh ../../build-aux/elisp-comp "$@" || exit 1; \
+	else : ; fi
+Wrote /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69/lib/emacs/elc.35533/autoconf-mode.elc
+Wrote /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69/lib/emacs/elc.35533/autotest-mode.elc
+make[3]: Nothing to be done for `all-am'.
+Making all in doc
+make[2]: Nothing to be done for `all'.
+Making all in tests
+autom4te_perllibdir='..'/lib AUTOM4TE_CFG='../lib/autom4te.cfg'         ../bin/autom4te -B '..'/lib -B '..'/lib         --language=M4sh ./wrapper.as -o wrapper.in
+rm -f autoconf autoconf.tmp
+input=wrapper.in; \
+	sed -e 's|@wrap_program[@]|autoconf|g' -e 's|@abs_top_srcdir[@]|/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69|g' -e 's|@abs_top_builddir[@]|/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69|g' -e "s|@configure_input[@]|Generated from $input.|g" wrapper.in >autoconf.tmp
+chmod +x autoconf.tmp
+chmod a-w autoconf.tmp
+mv -f autoconf.tmp autoconf
+rm -f autoheader autoheader.tmp
+input=wrapper.in; \
+	sed -e 's|@wrap_program[@]|autoheader|g' -e 's|@abs_top_srcdir[@]|/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69|g' -e 's|@abs_top_builddir[@]|/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69|g' -e "s|@configure_input[@]|Generated from $input.|g" wrapper.in >autoheader.tmp
+chmod +x autoheader.tmp
+chmod a-w autoheader.tmp
+mv -f autoheader.tmp autoheader
+rm -f autom4te autom4te.tmp
+input=wrapper.in; \
+	sed -e 's|@wrap_program[@]|autom4te|g' -e 's|@abs_top_srcdir[@]|/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69|g' -e 's|@abs_top_builddir[@]|/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69|g' -e "s|@configure_input[@]|Generated from $input.|g" wrapper.in >autom4te.tmp
+chmod +x autom4te.tmp
+chmod a-w autom4te.tmp
+mv -f autom4te.tmp autom4te
+rm -f autoreconf autoreconf.tmp
+input=wrapper.in; \
+	sed -e 's|@wrap_program[@]|autoreconf|g' -e 's|@abs_top_srcdir[@]|/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69|g' -e 's|@abs_top_builddir[@]|/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69|g' -e "s|@configure_input[@]|Generated from $input.|g" wrapper.in >autoreconf.tmp
+chmod +x autoreconf.tmp
+chmod a-w autoreconf.tmp
+mv -f autoreconf.tmp autoreconf
+rm -f autoscan autoscan.tmp
+input=wrapper.in; \
+	sed -e 's|@wrap_program[@]|autoscan|g' -e 's|@abs_top_srcdir[@]|/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69|g' -e 's|@abs_top_builddir[@]|/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69|g' -e "s|@configure_input[@]|Generated from $input.|g" wrapper.in >autoscan.tmp
+chmod +x autoscan.tmp
+chmod a-w autoscan.tmp
+mv -f autoscan.tmp autoscan
+rm -f autoupdate autoupdate.tmp
+input=wrapper.in; \
+	sed -e 's|@wrap_program[@]|autoupdate|g' -e 's|@abs_top_srcdir[@]|/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69|g' -e 's|@abs_top_builddir[@]|/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69|g' -e "s|@configure_input[@]|Generated from $input.|g" wrapper.in >autoupdate.tmp
+chmod +x autoupdate.tmp
+chmod a-w autoupdate.tmp
+mv -f autoupdate.tmp autoupdate
+rm -f ifnames ifnames.tmp
+input=wrapper.in; \
+	sed -e 's|@wrap_program[@]|ifnames|g' -e 's|@abs_top_srcdir[@]|/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69|g' -e 's|@abs_top_builddir[@]|/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69|g' -e "s|@configure_input[@]|Generated from $input.|g" wrapper.in >ifnames.tmp
+chmod +x ifnames.tmp
+chmod a-w ifnames.tmp
+mv -f ifnames.tmp ifnames
+Making all in man
+Updating man page config.guess.1
+PATH="../tests:../build-aux:$PATH"; \
+	export PATH; \
+	/bin/sh /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69/build-aux/missing --run help2man \
+	    --include=config.guess.x \
+	    --include=./common.x \
+	    --source='GNU Autoconf 2.69' \
+	    --output=config.guess.1.t `echo 'config.guess' | sed 's,.*/,,'`
+/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69/build-aux/missing: line 51: help2man: command not found
+WARNING: 'help2man' is missing on your system.  You should only need it if
+	 you modified a dependency of a manual page.  You may need the
+	 Help2man package in order for those modifications to take
+	 effect.  You can get Help2man from any GNU archive site.
+if sed 's/^\(\.TH[^"]*"[^"]*"[^"]*\)"[^"]*"/\1/' config.guess.1 >config.guess.1a.t 2>/dev/null && \
+	   sed 's/^\(\.TH[^"]*"[^"]*"[^"]*\)"[^"]*"/\1/' config.guess.1.t | cmp config.guess.1a.t - >/dev/null 2>&1; then \
+		touch config.guess.1; \
+	else \
+		mv config.guess.1.t config.guess.1; \
+	fi
+rm -f config.guess.1*.t
+Updating man page config.sub.1
+PATH="../tests:../build-aux:$PATH"; \
+	export PATH; \
+	/bin/sh /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69/build-aux/missing --run help2man \
+	    --include=config.sub.x \
+	    --include=./common.x \
+	    --source='GNU Autoconf 2.69' \
+	    --output=config.sub.1.t `echo 'config.sub' | sed 's,.*/,,'`
+/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/autoconf-2.69/build-aux/missing: line 51: help2man: command not found
+WARNING: 'help2man' is missing on your system.  You should only need it if
+	 you modified a dependency of a manual page.  You may need the
+	 Help2man package in order for those modifications to take
+	 effect.  You can get Help2man from any GNU archive site.
+if sed 's/^\(\.TH[^"]*"[^"]*"[^"]*\)"[^"]*"/\1/' config.sub.1 >config.sub.1a.t 2>/dev/null && \
+	   sed 's/^\(\.TH[^"]*"[^"]*"[^"]*\)"[^"]*"/\1/' config.sub.1.t | cmp config.sub.1a.t - >/dev/null 2>&1; then \
+		touch config.sub.1; \
+	else \
+		mv config.sub.1.t config.sub.1; \
+	fi
+rm -f config.sub.1*.t

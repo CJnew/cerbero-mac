@@ -1,0 +1,98 @@
+Running command 'make install'
+Making install in lib
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-recursive
+if test no = no; then \
+	  case 'darwin12' in \
+	    darwin[56]*) \
+	      need_charset_alias=true ;; \
+	    darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+	      need_charset_alias=false ;; \
+	    *) \
+	      need_charset_alias=true ;; \
+	  esac ; \
+	else \
+	  need_charset_alias=false ; \
+	fi ; \
+	if $need_charset_alias; then \
+	  /bin/sh /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/sed-4.2.2/build-aux/install-sh -d /Users/chenjie/Documents/git/cerbero/build/build-tools/lib ; \
+	fi ; \
+	if test -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias; then \
+	  sed -f ref-add.sed /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias > /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	  /usr/bin/install -c -m 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias ; \
+	  rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	else \
+	  if $need_charset_alias; then \
+	    sed -f ref-add.sed charset.alias > /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	    /usr/bin/install -c -m 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.alias ; \
+	    rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/charset.tmp ; \
+	  fi ; \
+	fi
+make[4]: Nothing to be done for `install-data-am'.
+Making install in po
+../build-aux/install-sh -c -d /Users/chenjie/Documents/git/cerbero/build/build-tools/share
+installing af.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/af/LC_MESSAGES/sed.mo
+installing ast.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ast/LC_MESSAGES/sed.mo
+installing ca.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ca/LC_MESSAGES/sed.mo
+installing cs.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/cs/LC_MESSAGES/sed.mo
+installing da.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/da/LC_MESSAGES/sed.mo
+installing de.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/de/LC_MESSAGES/sed.mo
+installing el.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/el/LC_MESSAGES/sed.mo
+installing eo.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/eo/LC_MESSAGES/sed.mo
+installing es.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/es/LC_MESSAGES/sed.mo
+installing et.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/et/LC_MESSAGES/sed.mo
+installing eu.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/eu/LC_MESSAGES/sed.mo
+installing fi.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/fi/LC_MESSAGES/sed.mo
+installing fr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/fr/LC_MESSAGES/sed.mo
+installing ga.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ga/LC_MESSAGES/sed.mo
+installing gl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/gl/LC_MESSAGES/sed.mo
+installing he.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/he/LC_MESSAGES/sed.mo
+installing hr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/hr/LC_MESSAGES/sed.mo
+installing hu.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/hu/LC_MESSAGES/sed.mo
+installing id.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/id/LC_MESSAGES/sed.mo
+installing it.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/it/LC_MESSAGES/sed.mo
+installing ja.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ja/LC_MESSAGES/sed.mo
+installing ko.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ko/LC_MESSAGES/sed.mo
+installing nb.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/nb/LC_MESSAGES/sed.mo
+installing nl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/nl/LC_MESSAGES/sed.mo
+installing pl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pl/LC_MESSAGES/sed.mo
+installing pt.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pt/LC_MESSAGES/sed.mo
+installing pt_BR.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pt_BR/LC_MESSAGES/sed.mo
+installing ro.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ro/LC_MESSAGES/sed.mo
+installing ru.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/ru/LC_MESSAGES/sed.mo
+installing sk.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sk/LC_MESSAGES/sed.mo
+installing sl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sl/LC_MESSAGES/sed.mo
+installing sr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sr/LC_MESSAGES/sed.mo
+installing sv.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/sv/LC_MESSAGES/sed.mo
+installing tr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/tr/LC_MESSAGES/sed.mo
+installing uk.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/uk/LC_MESSAGES/sed.mo
+installing vi.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/vi/LC_MESSAGES/sed.mo
+installing zh_CN.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/zh_CN/LC_MESSAGES/sed.mo
+installing zh_TW.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/zh_TW/LC_MESSAGES/sed.mo
+if test "sed" = "gettext-tools"; then \
+	  ../build-aux/install-sh -c -d /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/po; \
+	  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+	    /usr/bin/install -c -m 644 ./$file \
+			    /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/po/$file; \
+	  done; \
+	  for file in Makevars; do \
+	    rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/po/$file; \
+	  done; \
+	else \
+	  : ; \
+	fi
+Making install in sed
+ ../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+  /usr/bin/install -c sed '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+make[2]: Nothing to be done for `install-data-am'.
+Making install in doc
+make[2]: Nothing to be done for `install-exec-am'.
+ ../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info'
+ /usr/bin/install -c -m 644 ./sed.info '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info'
+ install-info --info-dir='/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info' '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/info/sed.info'
+ ../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+ /usr/bin/install -c -m 644 sed.1 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+Making install in testsuite
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.

@@ -1,0 +1,5 @@
+Running command 'curl -L  -k http://ftpmirror.gnu.org/bison/bison-3.0.4.tar.gz -o /Users/chenjie/Documents/git/cerbero/build/sources/local/bison-3.0.4/bison-3.0.4.tar.gz '
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 24 3275k   24  817k    0     0   602k      0  0:00:05  0:00:01  0:00:04  602k 80 3275k   80 2647k    0     0  1119k      0  0:00:02  0:00:02 --:--:-- 1811k100 3275k  100 3275k    0     0  1146k      0  0:00:02  0:00:02 --:--:-- 1638k

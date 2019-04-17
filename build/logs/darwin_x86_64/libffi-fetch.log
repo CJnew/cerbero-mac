@@ -1,0 +1,27 @@
+Running command 'mkdir -p /Users/chenjie/Documents/git/cerbero/build/sources/local/libffi'
+Running command 'git init'
+已初始化空的 Git 仓库于 /Users/chenjie/Documents/git/cerbero/build/sources/local/libffi/.git/
+Running command 'git config user.email'
+467116811@qq.com
+Running command 'git config user.name'
+Jie Chen
+Running command 'git remote add origin https://github.com/atgreen/libffi.git'
+Running command 'git fetch --all'
+正在获取 origin
+来自 https://github.com/atgreen/libffi
+ * [新分支]          appveyor      -> origin/appveyor
+ * [新分支]          master        -> origin/master
+ * [新分支]          travishacking -> origin/travishacking
+ * [新标签]          v3.0.10       -> v3.0.10
+ * [新标签]          v3.0.11       -> v3.0.11
+ * [新标签]          v3.0.12       -> v3.0.12
+ * [新标签]          v3.0.13       -> v3.0.13
+ * [新标签]          v3.0.9        -> v3.0.9
+ * [新标签]          v3.1          -> v3.1
+ * [新标签]          v3.2          -> v3.2
+ * [新标签]          v3.2.1        -> v3.2.1
+Running command 'git reset --hard 60e4250a77eb3fde500bfd68ec40519fe34b21bd'
+HEAD 现在位于 60e4250 make executable
+Running command 'git submodule init'
+Running command 'git submodule sync'
+Running command 'git submodule update'

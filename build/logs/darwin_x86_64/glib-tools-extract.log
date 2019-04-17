@@ -1,0 +1,59 @@
+Running command 'tar -Jxf /Users/chenjie/Documents/git/cerbero/build/sources/local/glib-tools-2.54.2/glib-2.54.2.tar.xz'
+Running command 'mkdir -p /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/glib-tools-2.54.2'
+Running command 'git init'
+已初始化空的 Git 仓库于 /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/glib-tools-2.54.2/.git/
+Running command 'git config user.email'
+467116811@qq.com
+Running command 'git config user.name'
+Jie Chen
+Running command 'git add --force -A .'
+Running command 'git commit -m "Initial commit" > /dev/null 2>&1'
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/glib/0001-Let-user-disable-Cocoa-and-Carbon-support-on-demand.patch'
+应用：Let user disable Cocoa and Carbon support on demand
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/glib/0002-Optionally-revert-to-the-old-pre-2.28-URI-handler-co.patch'
+.git/rebase-apply/patch:23: trailing whitespace.
+  
+.git/rebase-apply/patch:32: trailing whitespace.
+ 
+.git/rebase-apply/patch:34: trailing whitespace.
+      
+.git/rebase-apply/patch:37: trailing whitespace.
+      
+.git/rebase-apply/patch:39: trailing whitespace.
+ 
+warning: 抑制下仍有 2 个空白字符误用
+warning: 7 行新增了空白字符误用。
+应用：Optionally revert to the old (pre-2.28) URI handler code
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/glib/0003-Add-support-for-loading-GIO-modules-from-the-distro-.patch'
+应用：Add support for loading GIO modules from the distro's GIO module path
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/glib/0004-Allow-for-a-second-distro-GIO-module-path-as-used-on.patch'
+应用：Allow for a second distro GIO module path as used on Ubuntu
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/glib/0005-Blacklist-the-bamf-GIO-module.patch'
+应用：Blacklist the bamf GIO module
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/glib/0006-giomodule-do-not-try-to-load-modules-from-gio-module.patch'
+应用：giomodule: do not try to load modules from gio-module-dir in IOS
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/glib/0008-Unhide-_g_io_modules_ensure_extension_points_registe.patch'
+应用：Unhide _g_io_modules_ensure_extension_points_registered for calling by gio modules
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/glib/0009-Implementation-of-Cocoa-event-loop-integration-in-GM.patch'
+.git/rebase-apply/patch:77: trailing whitespace.
+ */ 
+.git/rebase-apply/patch:213: trailing whitespace.
+/* 
+.git/rebase-apply/patch:346: trailing whitespace.
+  
+.git/rebase-apply/patch:357: trailing whitespace.
+	  
+.git/rebase-apply/patch:362: trailing whitespace.
+	   */ 
+warning: 抑制下仍有 34 个空白字符误用
+warning: 39 行新增了空白字符误用。
+应用：Implementation of Cocoa event loop integration in GMainContext
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/glib/0010-GSocket-Fix-race-conditions-on-Win32-if-multiple-thr.patch'
+应用：GSocket: Fix race conditions on Win32 if multiple threads are waiting on conditions for the same socket
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/glib/0013-gmain-Fix-erroneous-if-condition-when-dtrace-is-disa.patch'
+应用：gmain: Fix erroneous if condition when dtrace is disabled
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/glib/0001-gmodule-Use-RTLD_DEFAULT-if-defined-__BIONIC__.patch'
+.git/rebase-apply/patch:17: trailing whitespace.
+   * always returns 'undefined symbol'. Only if RTLD_DEFAULT or 
+warning: 1 行新增了空白字符误用。
+应用：gmodule: Use RTLD_DEFAULT if defined __BIONIC__

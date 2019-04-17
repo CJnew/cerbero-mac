@@ -1,0 +1,15 @@
+Running command 'mkdir -p /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/gettext-tools-0.19.8.1'
+Running command 'git init'
+重新初始化已存在的 Git 仓库于 /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/gettext-tools-0.19.8.1/.git/
+Running command 'git config user.email'
+467116811@qq.com
+Running command 'git config user.name'
+Jie Chen
+Running command 'git add --force -A .'
+Running command 'git commit -m "Initial commit" > /dev/null 2>&1'
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/gettext/0001-Fix-linker-error-redefinition-of-vasprintf.patch'
+应用：Fix linker error: redefinition of vasprintf
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/gettext/0001-Undefine-__USE_MINGW_ANSI_STDIO-as-otherwise-stdio.h.patch'
+应用：Undefine __USE_MINGW_ANSI_STDIO as otherwise stdio.h defines asprintf
+Running command 'git am --ignore-whitespace /Users/chenjie/Documents/git/cerbero/recipes/gettext/0001-Fix-build-invalid-instruction-on-macOS-10.13.patch'
+应用：Fix build/invalid instruction on macOS 10.13

@@ -1,0 +1,70 @@
+Running command './configure --prefix /Users/chenjie/Documents/git/cerbero/build/build-tools --libdir /Users/chenjie/Documents/git/cerbero/build/build-tools/lib --disable-maintainer-mode  --disable-silent-rules  --enable-introspection  --build=x86_64-apple-darwin12   '
+checking whether make sets $(MAKE)... yes
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in lib (/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/gperf-3.0.4/lib)
+configure: running /bin/sh ./configure '--prefix=/Users/chenjie/Documents/git/cerbero/build/build-tools'  '--libdir' '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib' '--disable-maintainer-mode' '--disable-silent-rules' '--enable-introspection' '--build=x86_64-apple-darwin12' 'build_alias=x86_64-apple-darwin12' --cache-file=/dev/null --srcdir=.
+checking whether make sets $(MAKE)... yes
+checking for gcc... clang
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether clang accepts -g... yes
+checking for clang option to accept ISO C89... none needed
+checking how to run the C preprocessor... clang -E
+checking whether we are using the GNU C++ compiler... yes
+checking whether clang++ accepts -g... yes
+checking how to run the C++ preprocessor... clang++ -E
+checking for ranlib... ranlib
+checking for a BSD compatible install... /usr/bin/install -c
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in src (/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/gperf-3.0.4/src)
+configure: running /bin/sh ./configure '--prefix=/Users/chenjie/Documents/git/cerbero/build/build-tools'  '--libdir' '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib' '--disable-maintainer-mode' '--disable-silent-rules' '--enable-introspection' '--build=x86_64-apple-darwin12' 'build_alias=x86_64-apple-darwin12' --cache-file=/dev/null --srcdir=.
+checking whether make sets $(MAKE)... yes
+checking for gcc... clang
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether clang accepts -g... yes
+checking for clang option to accept ISO C89... none needed
+checking how to run the C preprocessor... clang -E
+checking whether we are using the GNU C++ compiler... yes
+checking whether clang++ accepts -g... yes
+checking how to run the C++ preprocessor... clang++ -E
+checking for a BSD compatible install... /usr/bin/install -c
+checking for stack-allocated variable-size arrays... yes
+checking for rand in -lm... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.h
+=== configuring in tests (/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/gperf-3.0.4/tests)
+configure: running /bin/sh ./configure '--prefix=/Users/chenjie/Documents/git/cerbero/build/build-tools'  '--libdir' '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib' '--disable-maintainer-mode' '--disable-silent-rules' '--enable-introspection' '--build=x86_64-apple-darwin12' 'build_alias=x86_64-apple-darwin12' --cache-file=/dev/null --srcdir=.
+checking whether make sets $(MAKE)... yes
+checking for gcc... clang
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether clang accepts -g... yes
+checking for clang option to accept ISO C89... none needed
+checking how to run the C preprocessor... clang -E
+checking whether we are using the GNU C++ compiler... yes
+checking whether clang++ accepts -g... yes
+checking how to run the C++ preprocessor... clang++ -E
+configure: creating ./config.status
+config.status: creating Makefile
+=== configuring in doc (/Users/chenjie/Documents/git/cerbero/build/sources/build-tools/gperf-3.0.4/doc)
+configure: running /bin/sh ./configure '--prefix=/Users/chenjie/Documents/git/cerbero/build/build-tools'  '--libdir' '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib' '--disable-maintainer-mode' '--disable-silent-rules' '--enable-introspection' '--build=x86_64-apple-darwin12' 'build_alias=x86_64-apple-darwin12' --cache-file=/dev/null --srcdir=.
+checking whether make sets $(MAKE)... yes
+checking for a BSD compatible install... /usr/bin/install -c
+configure: creating ./config.status
+config.status: creating Makefile

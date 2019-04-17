@@ -1,0 +1,31 @@
+# -*- Mode: Python -*- vi:si:et:sw=4:sts=4:ts=4:syntax=python
+import glob
+import shutil
+from cerbero.build.cookbook import CookBook
+
+
+class Recipe(recipe.Recipe):
+    name = 'flexvdi-spicy'
+    version = '2.2.7'
+    licenses = [License.LGPLv2_1]
+    stype = SourceType.CUSTOM
+    btype = BuildType.CUSTOM
+    append_env = {}
+
+    deps = ['flexvdi-spice-client', 'spice-gtk']
+
+    def spice_gtk_build_dir(self):
+        return CookBook(self.config).get_recipe('spice-gtk').build_dir
+
+    def extract(self):
+        shutil.rmtree(os.path.join(self.spice_gtk_build_dir(), "tools", "flexvdi"))
+
+    def compile(self):
+        shell.call("make -C tools -f Makefile.flexVDI", self.spice_gtk_build_dir())
+
+    def install(self):
+        shutil.copy(os.path.join(self.spice_gtk_build_dir(), "tools", "flexvdi", "spicy"),
+                    os.path.join(self.config.prefix, "bin", "spicy-flexvdi"))
+        shutil.rmtree(os.path.join(self.config.prefix, "share", "icons", "flexvdi"))
+        shutil.copytree(os.path.join(self.spice_gtk_build_dir(), "icons", "flexvdi"),
+                        os.path.join(self.config.prefix, "share", "icons", "flexvdi"))

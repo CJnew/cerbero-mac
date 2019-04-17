@@ -1,0 +1,182 @@
+Running command 'autoreconf -f -i'
+libtoolize: putting auxiliary files in '.'.
+libtoolize: copying file './ltmain.sh'
+libtoolize: putting macros in AC_CONFIG_MACRO_DIRS, 'm4'.
+libtoolize: copying file 'm4/libtool.m4'
+libtoolize: copying file 'm4/ltoptions.m4'
+libtoolize: copying file 'm4/ltsugar.m4'
+libtoolize: copying file 'm4/ltversion.m4'
+libtoolize: copying file 'm4/lt~obsolete.m4'
+configure.ac:31: installing './compile'
+configure.ac:8: installing './config.guess'
+configure.ac:8: installing './config.sub'
+configure.ac:19: installing './install-sh'
+configure.ac:19: installing './missing'
+Makefile.am: installing './depcomp'
+doc/Makefile.am:3: installing 'doc/mdate-sh'
+doc/Makefile.am:3: installing 'doc/texinfo.tex'
+Running command './configure --prefix /Users/chenjie/Documents/git/cerbero/build/build-tools --libdir /Users/chenjie/Documents/git/cerbero/build/build-tools/lib --disable-maintainer-mode  --disable-silent-rules  --enable-introspection  --build=x86_64-apple-darwin12   '
+configure: WARNING: unrecognized options: --enable-introspection
+checking build system type... x86_64-apple-darwin12
+checking host system type... x86_64-apple-darwin12
+checking target system type... x86_64-apple-darwin12
+continue configure in default builddir "./x86_64-apple-darwin12"
+....exec /bin/sh .././configure "--srcdir=.." "--enable-builddir=x86_64-apple-darwin12" "darwin12"
+configure: WARNING: unrecognized options: --enable-introspection
+checking build system type... x86_64-apple-darwin12
+checking host system type... x86_64-apple-darwin12
+checking target system type... x86_64-apple-darwin12
+checking for gsed... sed
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... ../install-sh -c -d
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... clang
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether clang accepts -g... yes
+checking for clang option to accept ISO C89... none needed
+checking whether clang understands -c and -o together... rm: conftest.dSYM: is a directory
+yes
+checking for style of include used by make... GNU
+checking dependency style of clang... gcc3
+checking whether we are using the GNU C++ compiler... yes
+checking whether clang++ accepts -g... yes
+checking dependency style of clang++... gcc3
+checking dependency style of clang... gcc3
+checking how to print strings... printf
+checking for a sed that does not truncate output... /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by clang... ld
+checking if the linker (ld) is GNU ld... no
+checking for BSD- or MS-compatible name lister (nm)... nm
+checking the name lister (nm) interface... rm: conftest.dSYM: is a directory
+BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 196608
+checking how to convert x86_64-apple-darwin12 file names to x86_64-apple-darwin12 format... func_convert_file_noop
+checking how to convert x86_64-apple-darwin12 file names to toolchain format... func_convert_file_noop
+checking for ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for archiver @FILE support... rm: conftest.dSYM: is a directory
+no
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse nm output from clang object... rm: conftest.dSYM: is a directory
+ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dsymutil... dsymutil
+checking for nmedit... nmedit
+checking for lipo... lipo
+checking for otool... otool
+checking for otool64... no
+checking for -single_module linker flag... yes
+checking for -exported_symbols_list linker flag... yes
+checking for -force_load linker flag... yes
+checking how to run the C preprocessor... clang -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if clang supports -fno-rtti -fno-exceptions... yes
+checking for clang option to produce PIC... -fno-common -DPIC
+checking if clang PIC flag -fno-common -DPIC works... yes
+checking if clang static flag -static works... no
+checking if clang supports -c -o file.o... yes
+checking if clang supports -c -o file.o... (cached) yes
+checking whether the clang linker (ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin12 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... clang++ -E
+checking for ld used by clang++... ld
+checking if the linker (ld) is GNU ld... no
+checking whether the clang++ linker (ld) supports shared libraries... yes
+checking for clang++ option to produce PIC... -fno-common -DPIC
+checking if clang++ PIC flag -fno-common -DPIC works... yes
+checking if clang++ static flag -static works... no
+checking if clang++ supports -c -o file.o... yes
+checking if clang++ supports -c -o file.o... (cached) yes
+checking whether the clang++ linker (ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin12 dyld
+checking how to hardcode library paths into programs... immediate
+checking size of size_t... 8
+checking for C compiler vendor... clang
+checking CFLAGS for maximum warnings... -Wall
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking for mmap... yes
+checking for mkostemp... (cached) no
+checking for sys/mman.h... (cached) yes
+checking for mmap... (cached) yes
+checking whether read-only mmap of a plain file works... yes
+checking whether mmap from /dev/zero works... no
+checking for MAP_ANON(YMOUS)... yes
+checking whether mmap with MAP_ANON(YMOUS) works... yes
+checking for ANSI C header files... (cached) yes
+checking for memcpy... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking size of double... 8
+checking size of long double... 16
+checking whether byte ordering is bigendian... no
+checking assembler .cfi pseudo-op support... yes
+checking assembler supports pc related relocs... yes
+checking for _ prefix in compiled symbols... yes
+checking toolchain supports unwind section type... no
+checking whether .eh_frame section should be read-only... no
+checking for __attribute__((visibility("hidden")))... no
+checking for ld used by clang... (cached) ld
+checking if the linker (ld) is GNU ld... (cached) no
+configure: versioning on shared library symbols is no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating include/Makefile
+config.status: creating include/ffi.h
+config.status: creating Makefile
+config.status: creating testsuite/Makefile
+config.status: creating man/Makefile
+config.status: creating doc/Makefile
+config.status: creating libffi.pc
+config.status: creating fficonfig.h
+config.status: linking ../src/x86/ffitarget.h to include/ffitarget.h
+config.status: executing buildir commands
+config.status: create top_srcdir/Makefile guessed from local Makefile
+config.status: build in x86_64-apple-darwin12 (HOST=)
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing include commands
+config.status: executing src commands
+configure: WARNING: unrecognized options: --enable-introspection

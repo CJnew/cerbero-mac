@@ -1,0 +1,18 @@
+Running command 'git reset --hard origin/master'
+HEAD 现在位于 c69e91e orc: fix C++ style comment
+Running command 'git branch cerbero_build'
+Running command 'git checkout cerbero_build'
+切换到分支 'cerbero_build'
+Running command 'git reset --hard origin/master'
+HEAD 现在位于 c69e91e orc: fix C++ style comment
+Running command 'git clone /Users/chenjie/Documents/git/cerbero/build/sources/local/orc-tool -s -b cerbero_build .'
+正克隆到 '.'...
+完成。
+Running command 'git config user.email'
+467116811@qq.com
+Running command 'git config user.name'
+Jie Chen
+Running command 'git submodule init'
+Running command 'git submodule sync'
+Running command 'git submodule update'
+Running command 'git submodule sync'

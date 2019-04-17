@@ -1,0 +1,10 @@
+Running command 'tar -Jxf /Users/chenjie/Documents/git/cerbero/build/sources/local/gtk-doc-lite-1.25/gtk-doc-1.25.tar.xz'
+Running command 'mkdir -p /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/gtk-doc-lite-1.25'
+Running command 'git init'
+已初始化空的 Git 仓库于 /Users/chenjie/Documents/git/cerbero/build/sources/build-tools/gtk-doc-lite-1.25/.git/
+Running command 'git config user.email'
+467116811@qq.com
+Running command 'git config user.name'
+Jie Chen
+Running command 'git add --force -A .'
+Running command 'git commit -m "Initial commit" > /dev/null 2>&1'

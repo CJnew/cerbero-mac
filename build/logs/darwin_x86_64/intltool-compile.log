@@ -1,0 +1,17 @@
+Running command 'make'
+Making all in tests
+Making all in cases
+make[2]: Nothing to be done for `all'.
+Making all in results
+make[2]: Nothing to be done for `all'.
+make[2]: Nothing to be done for `all-am'.
+Making all in doc
+make[1]: Nothing to be done for `all'.
+sed -e 's|[@]PACKAGE@|intltool|g' -e 's|[@]VERSION@|0.51.0|g' -e "s|[@]INTLTOOL_PERL@|/usr/bin/perl|g" -e "s|[@]INTLTOOL_LIBDIR@|/Users/chenjie/Documents/git/cerbero/build/build-tools/lib|g" < intltool-extract.in > intltool-extract
+chmod +x intltool-extract
+sed -e 's|[@]PACKAGE@|intltool|g' -e 's|[@]VERSION@|0.51.0|g' -e "s|[@]INTLTOOL_PERL@|/usr/bin/perl|g" -e "s|[@]INTLTOOL_LIBDIR@|/Users/chenjie/Documents/git/cerbero/build/build-tools/lib|g" < intltool-merge.in > intltool-merge
+chmod +x intltool-merge
+sed -e 's|[@]PACKAGE@|intltool|g' -e 's|[@]VERSION@|0.51.0|g' -e "s|[@]INTLTOOL_PERL@|/usr/bin/perl|g" -e "s|[@]INTLTOOL_LIBDIR@|/Users/chenjie/Documents/git/cerbero/build/build-tools/lib|g" < intltool-update.in > intltool-update
+chmod +x intltool-update
+sed -e 's|[@]PACKAGE@|intltool|g' -e 's|[@]VERSION@|0.51.0|g' -e "s|[@]INTLTOOL_PERL@|/usr/bin/perl|g" -e "s|[@]INTLTOOL_LIBDIR@|/Users/chenjie/Documents/git/cerbero/build/build-tools/lib|g" < intltool-prepare.in > intltool-prepare
+chmod +x intltool-prepare

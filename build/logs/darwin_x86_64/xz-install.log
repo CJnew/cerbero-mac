@@ -1,0 +1,112 @@
+Running command 'make install'
+Making install in src
+Making install in liblzma
+Making install in api
+make[4]: Nothing to be done for `install-exec-am'.
+ ../../../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/include'
+ ../../../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/lzma'
+ /usr/bin/install -c -m 644  lzma/base.h lzma/bcj.h lzma/block.h lzma/check.h lzma/container.h lzma/delta.h lzma/filter.h lzma/hardware.h lzma/index.h lzma/index_hash.h lzma/lzma12.h lzma/stream_flags.h lzma/version.h lzma/vli.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/lzma'
+ /usr/bin/install -c -m 644  lzma.h '/Users/chenjie/Documents/git/cerbero/build/build-tools/include/.'
+ ../../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+ /bin/sh ../../libtool   --mode=install /usr/bin/install -c   liblzma.la '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib'
+libtool: install: /usr/bin/install -c .libs/liblzma.5.dylib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/liblzma.5.dylib
+libtool: install: (cd /Users/chenjie/Documents/git/cerbero/build/build-tools/lib && { ln -s -f liblzma.5.dylib liblzma.dylib || { rm -f liblzma.dylib && ln -s liblzma.5.dylib liblzma.dylib; }; })
+libtool: install: /usr/bin/install -c .libs/liblzma.lai /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/liblzma.la
+libtool: install: /usr/bin/install -c .libs/liblzma.a /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/liblzma.a
+libtool: install: chmod 644 /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/liblzma.a
+libtool: install: ranlib /Users/chenjie/Documents/git/cerbero/build/build-tools/lib/liblzma.a
+ ../../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/pkgconfig'
+ /usr/bin/install -c -m 644 liblzma.pc '/Users/chenjie/Documents/git/cerbero/build/build-tools/lib/pkgconfig'
+Making install in xzdec
+ ../../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c xzdec lzmadec '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+libtool: install: /usr/bin/install -c .libs/xzdec /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/xzdec
+libtool: install: /usr/bin/install -c .libs/lzmadec /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/lzmadec
+ ../../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+ /usr/bin/install -c -m 644 xzdec.1 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-data-hook
+cd /Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1 && \
+	target=`echo xzdec | sed 's,x,x,'` && \
+	link=`echo lzmadec | sed 's,x,x,'` && \
+	rm -f $link.1 && \
+	ln -s $target.1 $link.1
+Making install in xz
+ ../../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c xz '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+libtool: install: /usr/bin/install -c .libs/xz /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/xz
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-exec-hook
+cd /Users/chenjie/Documents/git/cerbero/build/build-tools/bin && \
+	target=`echo xz | sed 's,x,x,'` && \
+	for name in unxz xzcat lzma unlzma lzcat; do \
+		link=`echo $name | sed 's,x,x,'` && \
+		rm -f $link && \
+		ln -s $target $link; \
+	done
+ ../../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+ /usr/bin/install -c -m 644 xz.1 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-data-hook
+cd /Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1 && \
+	target=`echo xz | sed 's,x,x,'` && \
+	for name in unxz xzcat lzma unlzma lzcat; do \
+		link=`echo $name | sed 's,x,x,'` && \
+		rm -f $link.1 && \
+		ln -s $target.1 $link.1; \
+	done
+Making install in lzmainfo
+ ../../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+  /bin/sh ../../libtool   --mode=install /usr/bin/install -c lzmainfo '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+libtool: install: /usr/bin/install -c .libs/lzmainfo /Users/chenjie/Documents/git/cerbero/build/build-tools/bin/lzmainfo
+ ../../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+ /usr/bin/install -c -m 644 lzmainfo.1 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+Making install in scripts
+ ../../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+ /usr/bin/install -c xzdiff xzgrep xzmore xzless '/Users/chenjie/Documents/git/cerbero/build/build-tools/bin'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-exec-hook
+cd /Users/chenjie/Documents/git/cerbero/build/build-tools/bin && \
+	for pair in xzdiff-xzcmp xzgrep-xzegrep xzgrep-xzfgrep xzdiff-lzdiff xzdiff-lzcmp xzgrep-lzgrep xzgrep-lzegrep xzgrep-lzfgrep xzmore-lzmore xzless-lzless; do \
+		target=`echo $pair | sed 's/-.*$//' | sed 's,x,x,'` && \
+		link=`echo $pair | sed 's/^.*-//' | sed 's,x,x,'` && \
+		rm -f $link && \
+		ln -s $target $link; \
+	done
+ ../../build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+ /usr/bin/install -c -m 644 xzdiff.1 xzgrep.1 xzmore.1 xzless.1 '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1'
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  install-data-hook
+cd /Users/chenjie/Documents/git/cerbero/build/build-tools/share/man/man1 && \
+	for pair in xzdiff-xzcmp xzgrep-xzegrep xzgrep-xzfgrep xzdiff-lzdiff xzdiff-lzcmp xzgrep-lzgrep xzgrep-lzegrep xzgrep-lzfgrep xzmore-lzmore xzless-lzless; do \
+		target=`echo $pair | sed 's/-.*$//' | sed 's,x,x,'` && \
+		link=`echo $pair | sed 's/^.*-//' | sed 's,x,x,'` && \
+		rm -f $link.1 && \
+		ln -s $target.1 $link.1; \
+	done
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in po
+installing cs.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/cs/LC_MESSAGES/xz.mo
+installing de.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/de/LC_MESSAGES/xz.mo
+installing fr.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/fr/LC_MESSAGES/xz.mo
+installing it.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/it/LC_MESSAGES/xz.mo
+installing pl.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/pl/LC_MESSAGES/xz.mo
+installing vi.gmo as /Users/chenjie/Documents/git/cerbero/build/build-tools/share/locale/vi/LC_MESSAGES/xz.mo
+if test "xz" = "gettext-tools"; then \
+	  ../build-aux/install-sh -c -d /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/po; \
+	  for file in Makefile.in.in remove-potcdate.sin quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot   Makevars.template; do \
+	    /usr/bin/install -c -m 644 ./$file \
+			    /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/po/$file; \
+	  done; \
+	  for file in Makevars; do \
+	    rm -f /Users/chenjie/Documents/git/cerbero/build/build-tools/share/gettext/po/$file; \
+	  done; \
+	else \
+	  : ; \
+	fi
+Making install in tests
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Nothing to be done for `install-exec-am'.
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/xz'
+ /usr/bin/install -c -m 644 AUTHORS COPYING COPYING.GPLv2 NEWS README THANKS TODO doc/faq.txt doc/history.txt doc/xz-file-format.txt doc/lzma-file-format.txt '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/xz'
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/xz/examples'
+ /usr/bin/install -c -m 644 doc/examples/00_README.txt doc/examples/01_compress_easy.c doc/examples/02_decompress.c doc/examples/03_compress_custom.c doc/examples/04_compress_easy_mt.c doc/examples/Makefile '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/xz/examples'
+ build-aux/install-sh -c -d '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/xz/examples_old'
+ /usr/bin/install -c -m 644 doc/examples_old/xz_pipe_comp.c doc/examples_old/xz_pipe_decomp.c '/Users/chenjie/Documents/git/cerbero/build/build-tools/share/doc/xz/examples_old'

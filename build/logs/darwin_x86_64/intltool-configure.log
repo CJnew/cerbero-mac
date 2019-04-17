@@ -1,0 +1,25 @@
+Running command './configure --prefix /Users/chenjie/Documents/git/cerbero/build/build-tools --libdir /Users/chenjie/Documents/git/cerbero/build/build-tools/lib --disable-maintainer-mode  --disable-silent-rules  --enable-introspection  --build=x86_64-apple-darwin12   '
+configure: WARNING: unrecognized options: --disable-maintainer-mode, --enable-introspection
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... ./install-sh -c -d
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for perl... /usr/bin/perl
+checking for perl >= 5.8.1... 5.18.2
+checking for XML::Parser... ok
+checking for bzr... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating intltoolize
+config.status: creating tests/Makefile
+config.status: creating tests/cases/Makefile
+config.status: creating tests/results/Makefile
+config.status: creating tests/selftest.pl
+configure: WARNING: unrecognized options: --disable-maintainer-mode, --enable-introspection
